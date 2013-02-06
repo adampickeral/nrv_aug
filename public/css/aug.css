@@ -1,0 +1,104 @@
+body {
+  background-color: #01406c;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+  height: 100%;
+  font-size: 1.1em; }
+
+#size {
+  float: left; }
+
+.title-section {
+  background-color: #0087be;
+  height: 7em; }
+  .title-section .title {
+    color: white;
+    text-align: center;
+    height: 2em;
+    font-weight: 700;
+    padding: 0.6em; }
+  .title-section .open-area {
+    display: none; }
+  .title-section .announcement {
+    text-align: center;
+    height: 2.7em;
+    background-color: #fcfcfc;
+    padding: 0.6em;
+    color: #01406c;
+    border: solid #01406c;
+    font-size: .9em; }
+    .title-section .announcement a {
+      font-size: .7em;
+      font-weight: 700;
+      color: #475d6c;
+      letter-spacing: 0.1em; }
+
+.content {
+  background-image: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png"); }
+  .content .navigation {
+    font-weight: 400; }
+    .content .navigation li {
+      padding: 0px;
+      height: 3em;
+      border: solid #01406c; }
+    .content .navigation a {
+      display: block;
+      padding-top: 0.9em;
+      height: 100%; }
+  .content .blurbs .blurb {
+    padding-left: 1em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    background-color: #fcfcfc; }
+    .content .blurbs .blurb h2 {
+      font-weight: 400;
+      font-size: 1.3em;
+      color: #01406c; }
+  .content .blurbs ul {
+    color: #01406c;
+    padding-left: 1em;
+    text-indent: -1em; }
+    .content .blurbs ul li b {
+      color: black; }
+
+footer {
+  background-color: #01406c;
+  padding: 3em 0.5em; }
+  footer .footer-info {
+    width: 100%;
+    text-align: center; }
+    footer .footer-info .footer-unit {
+      font-weight: 400;
+      margin: -1% auto 0 auto;
+      padding-bottom: 1em;
+      display: inline-block;
+      vertical-align: top; }
+      footer .footer-info .footer-unit .footer-title {
+        letter-spacing: 0.2em;
+        margin-bottom: 1.5em;
+        font-size: .75em;
+        color: white;
+        text-transform: uppercase; }
+      footer .footer-info .footer-unit .button {
+        position: relative;
+        width: 100%; }
+
+.button {
+  background-color: #0087be;
+  padding: 1em;
+  color: #fcfcfc;
+  text-align: center; }
+  .button:hover {
+    background-color: #005c82; }
+
+@media screen and (min-width: 480px) {
+  .title-section {
+    height: 8em; }
+    .title-section .title {
+      font-size: 1.5em;
+      padding: 1.1em 0 0em;
+      height: 2.2em; }
+    .title-section .announcement {
+      font-size: 1em;
+      height: 1.7em; } }
