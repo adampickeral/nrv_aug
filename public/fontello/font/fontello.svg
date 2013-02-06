@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20100429 at Thu Jan 17 01:49:37 2013
+ By root
+Copyright (C) 2012 by original authors @ fontello.com
+</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="760" >
+  <font-face 
+    font-family="fontello"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="850"
+    descent="-150"
+    bbox="15 -30 745 730"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+25B8-E75E"
+  />
+<missing-glyph horiz-adv-x="364" 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".notdef" horiz-adv-x="364" 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="uni25B8" unicode="&#x25b8;" horiz-adv-x="430" 
+d="M15 580l400 -230l-400 -230v460z" />
+    <glyph glyph-name="uni27A1" unicode="&#x27a1;" 
+d="M365 680l380 -330l-380 -330v192h-350v278h350v190z" />
+    <glyph glyph-name="uniE4AE" unicode="&#xe4ae;" 
+d="M365 730l380 -380l-380 -380v192h-350v378h350v190z" />
+    <glyph glyph-name="uniE75E" unicode="&#xe75e;" horiz-adv-x="370" 
+d="M113 626l226 -236q16 -16 16 -40q0 -22 -16 -38l-226 -236q-16 -16 -40 -16t-40 16q-36 36 0 80l186 194l-186 196q-36 44 0 80q16 16 41 16q26 0 39 -16z" />
+  </font>
+</defs></svg>

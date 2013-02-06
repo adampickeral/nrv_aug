@@ -1,0 +1,57 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "arrow",
+        "right"
+      ],
+      "code": 9656,
+      "uid": "ff9a85aa20950dcc0615a2707a2b3f8e",
+      "css": "right-dir",
+      "orig_css": "right-dir",
+      "orig_code": 9656,
+      "src": "entypo",
+      "from": 9656
+    },
+    {
+      "search": [
+        "arrow",
+        "right"
+      ],
+      "code": 10145,
+      "uid": "9e67bfab0143d9511f8eef6897caeb88",
+      "css": "right",
+      "orig_css": "right",
+      "orig_code": 10145,
+      "src": "entypo",
+      "from": 10145
+    },
+    {
+      "search": [
+        "arrow",
+        "right"
+      ],
+      "code": 58542,
+      "uid": "1a90b06af8614b12d8c8a5b90cc19ab3",
+      "css": "right-bold",
+      "orig_css": "right-bold",
+      "orig_code": 58542,
+      "src": "entypo",
+      "from": 58542
+    },
+    {
+      "search": [
+        "arrow",
+        "right"
+      ],
+      "code": 59230,
+      "uid": "749e7d90a9182938180f1d2d8c33584e",
+      "css": "right-open",
+      "orig_css": "right-open",
+      "orig_code": 59230,
+      "src": "entypo",
+      "from": 59230
+    }
+  ]
+}
