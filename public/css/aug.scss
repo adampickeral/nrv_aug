@@ -11,6 +11,17 @@ body {
   font-size: 1.1em;
 }
 
+.button {
+  background-color: $light-blue;
+  padding: 1em;
+  color: $light-background;
+  text-align: center;
+
+  &:hover {
+    background-color: #005c82;
+  }
+}
+
 #size {
   float: left;
 }
@@ -69,12 +80,14 @@ body {
   }
 
   .blurbs {
+    background-color: $light-background;
 
     .blurb {
       padding-left: 1em;
       padding-top: 0.75em;
       padding-bottom: 0.75em;
-      background-color: $light-background;
+      
+      margin-right: 5%;
 
       h2 {
         font-weight: 400;
@@ -126,17 +139,6 @@ footer {
   }
 }
 
-.button {
-  background-color: $light-blue;
-  padding: 1em;
-  color: $light-background;
-  text-align: center;
-
-  &:hover {
-    background-color: #005c82;
-  }
-}
-
 
 @media screen and (min-width: 480px) {
   .title-section {
@@ -158,8 +160,43 @@ footer {
 // @media screen and (min-width: 600px) {
 // }
 
-// @media screen and (min-width: 768px) {
-// }
+@media screen and (min-width: 768px) {
+  .title-section {
+    .announcement {
+      margin: -1% auto 0;
+      width: 95%;
+    }
+
+  }
+  .content {
+    padding-bottom: 5%;
+    .navigation {
+      width: 95%;
+      margin: 0 auto;
+      
+      ul {
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        li {
+          display: inline-block;
+          width: 25%;
+          margin: 0 auto 0 6%;
+          border: 0;
+        }
+      }
+    }
+
+    .blurbs {
+      margin: 0 auto;
+      width: 95%;
+      .blurb {
+        padding-bottom: 2em;
+        margin-right: 0;
+      }
+    }
+  }
+}
 
 // @media screen and (min-width: 1024px) {
 // }

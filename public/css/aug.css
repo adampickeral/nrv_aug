@@ -6,6 +6,14 @@ body {
   height: 100%;
   font-size: 1.1em; }
 
+.button {
+  background-color: #0087be;
+  padding: 1em;
+  color: #fcfcfc;
+  text-align: center; }
+  .button:hover {
+    background-color: #005c82; }
+
 #size {
   float: left; }
 
@@ -46,21 +54,23 @@ body {
       display: block;
       padding-top: 0.9em;
       height: 100%; }
-  .content .blurbs .blurb {
-    padding-left: 1em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+  .content .blurbs {
     background-color: #fcfcfc; }
-    .content .blurbs .blurb h2 {
-      font-weight: 400;
-      font-size: 1.3em;
-      color: #01406c; }
-  .content .blurbs ul {
-    color: #01406c;
-    padding-left: 1em;
-    text-indent: -1em; }
-    .content .blurbs ul li b {
-      color: black; }
+    .content .blurbs .blurb {
+      padding-left: 1em;
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+      margin-right: 5%; }
+      .content .blurbs .blurb h2 {
+        font-weight: 400;
+        font-size: 1.3em;
+        color: #01406c; }
+    .content .blurbs ul {
+      color: #01406c;
+      padding-left: 1em;
+      text-indent: -1em; }
+      .content .blurbs ul li b {
+        color: black; }
 
 footer {
   background-color: #01406c;
@@ -84,14 +94,6 @@ footer {
         position: relative;
         width: 100%; }
 
-.button {
-  background-color: #0087be;
-  padding: 1em;
-  color: #fcfcfc;
-  text-align: center; }
-  .button:hover {
-    background-color: #005c82; }
-
 @media screen and (min-width: 480px) {
   .title-section {
     height: 8em; }
@@ -102,3 +104,27 @@ footer {
     .title-section .announcement {
       font-size: 1em;
       height: 1.7em; } }
+@media screen and (min-width: 768px) {
+  .title-section .announcement {
+    margin: -1% auto 0;
+    width: 95%; }
+
+  .content {
+    padding-bottom: 5%; }
+    .content .navigation {
+      width: 95%;
+      margin: 0 auto; }
+      .content .navigation ul {
+        padding-top: 1em;
+        padding-bottom: 1em; }
+        .content .navigation ul li {
+          display: inline-block;
+          width: 25%;
+          margin: 0 auto 0 6%;
+          border: 0; }
+    .content .blurbs {
+      margin: 0 auto;
+      width: 95%; }
+      .content .blurbs .blurb {
+        padding-bottom: 2em;
+        margin-right: 0; } }
