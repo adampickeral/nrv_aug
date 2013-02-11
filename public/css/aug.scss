@@ -201,6 +201,53 @@ footer {
 // @media screen and (min-width: 1024px) {
 // }
 
+@media screen and (min-width: 1200px) {
+  .title-section {
+    height: 14em;
+
+    .title {
+      height: 2.7em;
+      padding-top: 2.4em;
+    }
+
+    .open-area {
+      display: block;
+      background-color: $dark-blue;
+      height: 6.3em;
+    }
+
+    .announcement {
+      margin-top: -4.6em;
+      border: solid $light-blue;
+      width: 60%;
+    }
+  }
+  
+  .content {
+    padding-top: 2em;
+
+    .navigation {
+      float: left;
+      width: 15%;
+      margin-left: 0.5em;
+
+      ul {
+        width: 100%;
+        li {
+          width: 100%;
+          display: block;
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    .blurbs {
+      width: 70%;
+      margin-left: 19%;
+    }
+  }
+}
+
 // @media screen and (min-width: 1200px) {
 //   body {
 //     font-size: 1.4em;

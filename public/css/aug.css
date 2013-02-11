@@ -128,3 +128,33 @@ footer {
       .content .blurbs .blurb {
         padding-bottom: 2em;
         margin-right: 0; } }
+@media screen and (min-width: 1200px) {
+  .title-section {
+    height: 14em; }
+    .title-section .title {
+      height: 2.7em;
+      padding-top: 2.4em; }
+    .title-section .open-area {
+      display: block;
+      background-color: #01406c;
+      height: 6.3em; }
+    .title-section .announcement {
+      margin-top: -4.6em;
+      border: solid #0087be;
+      width: 60%; }
+
+  .content {
+    padding-top: 2em; }
+    .content .navigation {
+      float: left;
+      width: 15%;
+      margin-left: 0.5em; }
+      .content .navigation ul {
+        width: 100%; }
+        .content .navigation ul li {
+          width: 100%;
+          display: block;
+          margin-bottom: 1em; }
+    .content .blurbs {
+      width: 70%;
+      margin-left: 19%; } }
