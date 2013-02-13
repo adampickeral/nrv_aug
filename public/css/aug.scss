@@ -183,6 +183,13 @@ footer {
           width: 25%;
           margin: 0 auto 0 6%;
           border: 0;
+
+          a {
+            height: 0;
+            max-height: 100%;
+            padding-top: 0.8em;
+            padding-bottom: 2.2em;
+          }
         }
       }
     }
@@ -202,12 +209,16 @@ footer {
 // }
 
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.4em;
+  }
+
   .title-section {
     height: 14em;
 
     .title {
-      height: 2.7em;
-      padding-top: 2.4em;
+      height: 2.4em;
+      font-size: 2.2em;
     }
 
     .open-area {
@@ -242,7 +253,7 @@ footer {
     }
 
     .blurbs {
-      width: 70%;
+      width: 62%;
       margin-left: 19%;
     }
   }

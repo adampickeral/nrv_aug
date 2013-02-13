@@ -122,6 +122,11 @@ footer {
           width: 25%;
           margin: 0 auto 0 6%;
           border: 0; }
+          .content .navigation ul li a {
+            height: 0;
+            max-height: 100%;
+            padding-top: 0.8em;
+            padding-bottom: 2.2em; }
     .content .blurbs {
       margin: 0 auto;
       width: 95%; }
@@ -129,11 +134,14 @@ footer {
         padding-bottom: 2em;
         margin-right: 0; } }
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.4em; }
+
   .title-section {
     height: 14em; }
     .title-section .title {
-      height: 2.7em;
-      padding-top: 2.4em; }
+      height: 2.4em;
+      font-size: 2.2em; }
     .title-section .open-area {
       display: block;
       background-color: #01406c;
@@ -156,5 +164,5 @@ footer {
           display: block;
           margin-bottom: 1em; }
     .content .blurbs {
-      width: 70%;
+      width: 62%;
       margin-left: 19%; } }
