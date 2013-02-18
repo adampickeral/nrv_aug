@@ -13,13 +13,36 @@
   <script type="text/javascript" src="/javascript/mustache.js"></script>
   <script type="text/javascript" src="/javascript/templates.js"></script>
   <script type="text/javascript">
+    function setContent(content) {
+      if ($(".blurbs").length === 0) {
+        $(".content").append(content);
+      } else {
+        $(".blurbs").replaceWith(content);
+      }
+    }
+
+    function updateState() {
+      var hash;
+
+      hash = location.hash.substr(location.hash.indexOf('#') + 1);
+
+      if (hash === "main") {
+        setContent(mainTmpl());
+      } else if (hash === "meetings") {
+        setContent(meetingsTmpl());
+      } else {
+        setContent(mainTmpl());
+      }
+    }
+
     $(document).ready(function(){
       $("#size").text($(window).width() + "px");
       $(window).resize(function() {
         $("#size").text($(window).width() + "px");
       });
 
-      $(".content").append(mainTempl());
+      window.onhashchange = updateState;
+      updateState(location.hash);
     });
   </script>
 </head>
@@ -37,9 +60,9 @@
   <section class="content">
     <div class="navigation">
       <ul>
-        <li class="button"><a href="google.com">Home</a></li>
-        <li class="button"><a href="#">Meetings</a></li>
-        <li class="button"><a href="#">Resources</a></li>
+        <li class="button"><a href="#main">Home</a></li>
+        <li class="button"><a href="#meetings">Meetings</a></li>
+        <li class="button"><a href="#main">Resources</a></li>
       </ul>
     </div>
     
