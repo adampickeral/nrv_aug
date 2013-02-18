@@ -152,7 +152,8 @@ footer {
       width: 60%; }
 
   .content {
-    padding-top: 2em; }
+    padding-top: 2em;
+    min-height: 314px; }
     .content .navigation {
       float: left;
       width: 15%;
