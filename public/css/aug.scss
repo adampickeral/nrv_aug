@@ -94,6 +94,11 @@ body {
         font-size: 1.3em;
         color: $dark-blue;
       }
+
+      #map-canvas {
+        width: 98%;
+        height: 24em;
+      }
     }
 
     ul {

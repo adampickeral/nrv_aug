@@ -1,3 +1,5 @@
+nrvaug.templates = {};
+
 var main = 
   '<div class="blurbs">' +
     '<div class="blurb">' +
@@ -21,9 +23,15 @@ var meetings =
     '<div class="blurb">' +
       '<h2>Meetings</h2>' +
       '<p class="blurb-content">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm</p>' +
-      '<p class="blurb-content">Our next meeting will be on Wednesday March 13th, from 6:00pm - 8:00pm</p>' +
+      '<p class="blurb-content">Our next meeting will be on Tuesday March 12th, from 6:00pm - 8:00pm</p>' +
     '</div>' +
+    '<div class="blurb">' +
+      '<div id="map-canvas"></div>'
+    '</div>'
   '</div>';
 
 var mainTmpl = Mustache.compile(main);
 var meetingsTmpl = Mustache.compile(meetings);
+
+nrvaug.templates.mainTmpl = Mustache.compile(main);
+nrvaug.templates.meetingsTmpl = Mustache.compile(meetings);
