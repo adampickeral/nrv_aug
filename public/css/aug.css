@@ -65,6 +65,9 @@ body {
         font-weight: 400;
         font-size: 1.3em;
         color: #01406c; }
+      .content .blurbs .blurb #map-canvas {
+        width: 98%;
+        height: 24em; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
@@ -152,7 +155,8 @@ footer {
       width: 60%; }
 
   .content {
-    padding-top: 2em; }
+    padding-top: 2em;
+    min-height: 314px; }
     .content .navigation {
       float: left;
       width: 15%;

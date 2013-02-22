@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <title>NRV Agile Users Group</title>
@@ -10,12 +11,25 @@
   <link rel="stylesheet" href="/fontello/css/fontello.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJzx6W96_Sy88PSq7kpoFtmedMwfOA0ko&sensor=false"></script>
+  <script type="text/javascript" src="/javascript/mustache.js"></script>
+  <script type="text/javascript" src="/javascript/package.js"></script>
+  <script type="text/javascript" src="/javascript/templates.js"></script>
+  <script type="text/javascript" src="/javascript/controller.js"></script>
+  <script type="text/javascript" src="/javascript/views/package.js"></script>
+  <script type="text/javascript" src="/javascript/views/main.js"></script>
+  <script type="text/javascript" src="/javascript/views/map.js"></script>
+  <script type="text/javascript" src="/javascript/views/meetings.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $("#size").text($(window).width() + "px");
-      $(window).resize(function() {
-        $("#size").text($(window).width() + "px");
-      });
+      var controller;
+      // $("#size").text($(window).width() + "px");
+      // $(window).resize(function() {
+      //   $("#size").text($(window).width() + "px");
+      // });
+
+      controller = new nrvaug.Controller(this);
+      controller.init();
     });
   </script>
 </head>
@@ -27,32 +41,18 @@
       <h1 class="title">New River Valley Agile Users Group</h1>
     </div>
     <div class="open-area"></div>
-    <div class="announcement"><span>Our next meeting is Tuesday, February 12th! <a href="#">MORE INFO &raquo;</a></span></div>
+    <div class="announcement"><span>Our next meeting is Tuesday, February 12th! <a href="#meetings">MORE INFO &raquo;</a></span></div>
   </header>
   
   <section class="content">
     <div class="navigation">
       <ul>
-        <li class="button"><a href="google.com">Home</a></li>
-        <li class="button"><a href="#">Meetings</a></li>
-        <li class="button"><a href="#">Resources</a></li>
+        <li class="button"><a href="#main">Home</a></li>
+        <li class="button"><a href="#meetings">Meetings</a></li>
+        <li class="button"><a href="#main">Resources</a></li>
       </ul>
     </div>
-    <div class="blurbs">
-      <div class="blurb">
-        <h2>Our Mission</h2>
-        <p class="blurb-content">Encourage better software development through agile practices</p>
-      </div>
-      <div class="blurb">
-        <h2>Principles</h2>
-        <ul class="blurb-content">
-          <li class="icon-right-dir"><b>Discussions are open to all things agile</b></li>
-          <li class="icon-right-dir"><b>Allow the group to determine discussion topics</b></li>
-          <li class="icon-right-dir"><b>Include people from all aspects of software development</b></li>
-          <li class="icon-right-dir"><b>Meet on a monthly basis</b></li>
-        </ul>
-      </div>
-    </div>
+    
   </section>
   <footer>
     <div class="footer-info">
