@@ -1,5 +1,5 @@
 describe('nrvaug.Controller', function () {
-  var controller, location, mainView;
+  var controller, location, mainView, meetingsView, globals;
 
   beforeEach(function () {
     spyOn(nrvaug.templates, 'mainTmpl');
@@ -9,23 +9,59 @@ describe('nrvaug.Controller', function () {
     mainView = {
       'render': jasmine.createSpy('render')
     };
+    meetingsView = {
+      'render': jasmine.createSpy('render')
+    };
     spyOn(nrvaug.views, 'createMainView').andReturn(mainView);
-    controller = new nrvaug.Controller();
-    controller.init();
+    spyOn(nrvaug.views, 'createMeetingsView').andReturn(meetingsView);
+    globals = {
+      location: {
+        hash: ''
+      }
+    };
+    controller = new nrvaug.Controller(globals);
   });
 
-  it('routes to main by default', function () {
-    expect(mainView.render).toHaveBeenCalled();
-    expect(nrvaug.templates.mainTmpl).toHaveBeenCalled();
+  describe('routes', function () {
+    it('to main by default', function () {
+      controller.route();
+
+      expect(mainView.render).toHaveBeenCalled();
+      expect(meetingsView.render).not.toHaveBeenCalled();
+    });
+
+    it('to meetings if location is meetings', function () {
+      globals.location.hash = '#meetings';
+      
+      controller.route();    
+      
+      expect(meetingsView.render).toHaveBeenCalled();
+      expect(mainView.render).not.toHaveBeenCalled();
+    });
+
+    it('to main if location is main', function () {
+      globals.location.hash = '#main';
+
+      controller.route();    
+      
+      expect(mainView.render).toHaveBeenCalled();
+    });
   });
 
-  it('routes to meetings if location is meetings', function () {
-    controller.route();    
-    expect(nrvaug.templates.meetingsTmpl).toHaveBeenCalled();
-  });
+  describe('init', function () {
+    it('routes when initialized', function () {
+      controller.init();
 
-  it('routes to main if location is main', function () {
-    controller.route();    
-    expect(nrvaug.templates.mainTmpl).toHaveBeenCalled();
+      expect(mainView.render).toHaveBeenCalled();
+    });
+
+    it('routes when the location hash changes', function () {
+      controller.init();
+
+      globals.location.hash = '#main';
+      $(window).trigger('hashchange');
+
+      expect(mainView.render.callCount).toBe(2);
+    });
   });
 });

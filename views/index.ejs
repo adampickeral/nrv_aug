@@ -13,57 +13,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJzx6W96_Sy88PSq7kpoFtmedMwfOA0ko&sensor=false"></script>
   <script type="text/javascript" src="/javascript/mustache.js"></script>
+  <script type="text/javascript" src="/javascript/package.js"></script>
   <script type="text/javascript" src="/javascript/templates.js"></script>
+  <script type="text/javascript" src="/javascript/controller.js"></script>
+  <script type="text/javascript" src="/javascript/views/package.js"></script>
+  <script type="text/javascript" src="/javascript/views/main.js"></script>
+  <script type="text/javascript" src="/javascript/views/map.js"></script>
+  <script type="text/javascript" src="/javascript/views/meetings.js"></script>
   <script type="text/javascript">
-    function setContent(content) {
-      if ($(".blurbs").length === 0) {
-        $(".content").append(content);
-      } else {
-        $(".blurbs").replaceWith(content);
-      }
-    }
-
-    function updateState() {
-      var hash;
-
-      hash = location.hash.substr(location.hash.indexOf('#') + 1);
-
-      if (hash === "main") {
-        setContent(mainTmpl());
-      } else if (hash === "meetings") {
-        setContent(meetingsTmpl());
-        var geocoder;
-        geocoder = new google.maps.Geocoder();
-        var mapOptions = {
-          zoom: 18,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-        var address = '432 North Main St # 200, Blacksburg, VA 24060';
-        geocoder.geocode( { 'address': address}, function(results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            map.setCenter(results[0].geometry.location);
-            var marker = new google.maps.Marker({
-                map: map,
-                position: results[0].geometry.location
-            });
-          } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-          }
-        });
-      } else {
-        setContent(mainTmpl());
-      }
-    }
-
     $(document).ready(function(){
-      $("#size").text($(window).width() + "px");
-      $(window).resize(function() {
-        $("#size").text($(window).width() + "px");
-      });
+      var controller;
+      // $("#size").text($(window).width() + "px");
+      // $(window).resize(function() {
+      //   $("#size").text($(window).width() + "px");
+      // });
 
-      window.onhashchange = updateState;
-      updateState(location.hash);
+      controller = new nrvaug.Controller(this);
+      controller.init();
     });
   </script>
 </head>
