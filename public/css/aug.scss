@@ -82,6 +82,10 @@ body {
   .blurbs {
     background-color: $light-background;
 
+    a {
+      color: $light-blue;
+    }
+
     .blurb {
       padding-left: 1em;
       padding-top: 0.75em;
@@ -89,7 +93,12 @@ body {
       
       margin-right: 5%;
 
+      p {
+        margin-bottom: 0.25em;
+      }
+
       h2 {
+        margin-bottom: 0.5em;
         font-weight: 400;
         font-size: 1.3em;
         color: $dark-blue;
@@ -97,7 +106,8 @@ body {
 
       #map-canvas {
         width: 98%;
-        height: 24em;
+        height: 26em;
+        font-size: .6em;
       }
     }
 
@@ -180,12 +190,15 @@ footer {
       margin: 0 auto;
       
       ul {
+        width: 100%;
+        margin: 0 auto;
         padding-top: 1em;
         padding-bottom: 1em;
 
         li {
           display: inline-block;
-          width: 25%;
+          // width: 25%;
+          width: 40%;
           margin: 0 auto 0 6%;
           border: 0;
 
