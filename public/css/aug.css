@@ -56,18 +56,24 @@ body {
       height: 100%; }
   .content .blurbs {
     background-color: #fcfcfc; }
+    .content .blurbs a {
+      color: #0087be; }
     .content .blurbs .blurb {
       padding-left: 1em;
       padding-top: 0.75em;
       padding-bottom: 0.75em;
       margin-right: 5%; }
+      .content .blurbs .blurb p {
+        margin-bottom: 0.25em; }
       .content .blurbs .blurb h2 {
+        margin-bottom: 0.5em;
         font-weight: 400;
         font-size: 1.3em;
         color: #01406c; }
       .content .blurbs .blurb #map-canvas {
         width: 98%;
-        height: 24em; }
+        height: 26em;
+        font-size: .6em; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
@@ -118,11 +124,13 @@ footer {
       width: 95%;
       margin: 0 auto; }
       .content .navigation ul {
+        width: 100%;
+        margin: 0 auto;
         padding-top: 1em;
         padding-bottom: 1em; }
         .content .navigation ul li {
           display: inline-block;
-          width: 25%;
+          width: 40%;
           margin: 0 auto 0 6%;
           border: 0; }
           .content .navigation ul li a {
