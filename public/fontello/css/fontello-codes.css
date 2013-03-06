@@ -1,5 +1,13 @@
 
+.icon-info:before { content: '\2139'; } /* 'ℹ' */
 .icon-right-dir:before { content: '\25b8'; } /* '▸' */
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-check:before { content: '\2713'; } /* '✓' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-help:before { content: '\2753'; } /* '❓' */
 .icon-right:before { content: '\27a1'; } /* '➡' */
 .icon-right-bold:before { content: '\e4ae'; } /* '' */
+.icon-help-circled:before { content: '\e704'; } /* '' */
+.icon-info-circled:before { content: '\e705'; } /* '' */
+.icon-chat:before { content: '\e720'; } /* '' */
 .icon-right-open:before { content: '\e75e'; } /* '' */
