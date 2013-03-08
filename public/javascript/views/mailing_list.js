@@ -1,17 +1,10 @@
 nrvaug.views.MailingList = function () {
 
 };
+nrvaug.views.MailingList.prototype = new nrvaug.views.View();
 
-nrvaug.views.MailingList.prototype.render = function () {
-  var blurbs, template;
-
-  blurbs = $('.blurbs');
-  template = nrvaug.templates.mailingListTmpl();
-  if (blurbs.length === 0) {
-    $('.content').append(template);
-  } else {
-    blurbs.replaceWith(template);
-  }
+nrvaug.views.MailingList.prototype.getTemplate = function () {
+  return nrvaug.templates.mailingListTmpl();
 };
 
 nrvaug.views.createMailingListView = function () {
