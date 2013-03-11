@@ -15,10 +15,13 @@ body {
   background-color: $light-blue;
   padding: 1em;
   color: $light-background;
+  font-weight: 400;
   text-align: center;
 
   &:hover {
     background-color: #005c82;
+    cursor: hand;
+    cursor: pointer;
   }
 }
 
@@ -64,7 +67,6 @@ body {
   background-image: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png');
 
   .navigation {
-    font-weight: 400;
 
     li { 
       padding: 0px;
@@ -82,7 +84,7 @@ body {
   .blurbs {
     background-color: $light-background;
 
-    a {
+    .info-link {
       color: $light-blue;
     }
 
@@ -108,6 +110,20 @@ body {
         width: 98%;
         height: 26em;
         font-size: .6em;
+      }
+
+      .form-field {
+        margin-bottom: 1em;
+        width: 16em;
+        input, textarea {
+          float:right;
+          line-height: 1.4em;
+          margin-top: 0.3em;
+        }
+
+        &.save-link {
+          margin-top: 2em;
+        }
       }
     }
 

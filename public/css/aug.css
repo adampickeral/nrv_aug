@@ -10,9 +10,12 @@ body {
   background-color: #0087be;
   padding: 1em;
   color: #fcfcfc;
+  font-weight: 400;
   text-align: center; }
   .button:hover {
-    background-color: #005c82; }
+    background-color: #005c82;
+    cursor: hand;
+    cursor: pointer; }
 
 #size {
   float: left; }
@@ -44,19 +47,17 @@ body {
 
 .content {
   background-image: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png"); }
-  .content .navigation {
-    font-weight: 400; }
-    .content .navigation li {
-      padding: 0px;
-      height: 3em;
-      border: solid #01406c; }
-    .content .navigation a {
-      display: block;
-      padding-top: 0.9em;
-      height: 100%; }
+  .content .navigation li {
+    padding: 0px;
+    height: 3em;
+    border: solid #01406c; }
+  .content .navigation a {
+    display: block;
+    padding-top: 0.9em;
+    height: 100%; }
   .content .blurbs {
     background-color: #fcfcfc; }
-    .content .blurbs a {
+    .content .blurbs .info-link {
       color: #0087be; }
     .content .blurbs .blurb {
       padding-left: 1em;
@@ -74,6 +75,15 @@ body {
         width: 98%;
         height: 26em;
         font-size: .6em; }
+      .content .blurbs .blurb .form-field {
+        margin-bottom: 1em;
+        width: 16em; }
+        .content .blurbs .blurb .form-field input, .content .blurbs .blurb .form-field textarea {
+          float: right;
+          line-height: 1.4em;
+          margin-top: 0.3em; }
+        .content .blurbs .blurb .form-field.save-link {
+          margin-top: 2em; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
