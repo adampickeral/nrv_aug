@@ -1,10 +1,20 @@
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot");
-  src: url("../font/fontello.eot?#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
+  src: url("../font/fontello.eot?67133873");
+  src: url("../font/fontello.eot?67133873#iefix") format('embedded-opentype'), url("../font/fontello.woff?67133873") format('woff'), url("../font/fontello.ttf?67133873") format('truetype'), url("../font/fontello.svg?67133873#fontello") format('svg');
   font-weight: normal;
   font-style: normal;
 }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?67133873#fontello') format('svg');
+  }
+}
+*/
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: 'fontello';
@@ -16,7 +26,10 @@
   width: 1em;
   margin-right: 0.2em;
   text-align: center;
-  opacity: 0.8;
+/* opacity .8 */
+/* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
 /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
 /* Animation center compensation - magrins should be symmetric */
@@ -28,7 +41,15 @@
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-info:before { content: '\2139'; } /* 'ℹ' */
 .icon-right-dir:before { content: '\25b8'; } /* '▸' */
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-check:before { content: '\2713'; } /* '✓' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-help:before { content: '\2753'; } /* '❓' */
 .icon-right:before { content: '\27a1'; } /* '➡' */
 .icon-right-bold:before { content: '\e4ae'; } /* '' */
+.icon-help-circled:before { content: '\e704'; } /* '' */
+.icon-info-circled:before { content: '\e705'; } /* '' */
+.icon-chat:before { content: '\e720'; } /* '' */
 .icon-right-open:before { content: '\e75e'; } /* '' */

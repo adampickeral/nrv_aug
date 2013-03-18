@@ -1,0 +1,1 @@
+Need config.js which stores the api key for mailing list.

@@ -10,9 +10,12 @@ body {
   background-color: #0087be;
   padding: 1em;
   color: #fcfcfc;
+  font-weight: 400;
   text-align: center; }
   .button:hover {
-    background-color: #005c82; }
+    background-color: #005c82;
+    cursor: hand;
+    cursor: pointer; }
 
 #size {
   float: left; }
@@ -44,19 +47,17 @@ body {
 
 .content {
   background-image: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png"); }
-  .content .navigation {
-    font-weight: 400; }
-    .content .navigation li {
-      padding: 0px;
-      height: 3em;
-      border: solid #01406c; }
-    .content .navigation a {
-      display: block;
-      padding-top: 0.9em;
-      height: 100%; }
+  .content .navigation li {
+    padding: 0px;
+    height: 3em;
+    border: solid #01406c; }
+  .content .navigation a {
+    display: block;
+    padding-top: 0.9em;
+    height: 100%; }
   .content .blurbs {
     background-color: #fcfcfc; }
-    .content .blurbs a {
+    .content .blurbs .info-link {
       color: #0087be; }
     .content .blurbs .blurb {
       padding-left: 1em;
@@ -74,6 +75,24 @@ body {
         width: 98%;
         height: 26em;
         font-size: .6em; }
+      .content .blurbs .blurb .form-field {
+        margin-bottom: 1em;
+        width: 23em; }
+        .content .blurbs .blurb .form-field input, .content .blurbs .blurb .form-field textarea {
+          float: right;
+          width: 20em;
+          line-height: 1.4em;
+          margin-top: 0.3em;
+          margin-right: 2em; }
+        .content .blurbs .blurb .form-field.save-link {
+          margin-top: 2em; }
+          .content .blurbs .blurb .form-field.save-link a {
+            padding-left: 3em;
+            padding-right: 3em; }
+        .content .blurbs .blurb .form-field.info-message.success {
+          color: green; }
+        .content .blurbs .blurb .form-field.info-message.error {
+          color: red; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
@@ -89,19 +108,21 @@ footer {
     text-align: center; }
     footer .footer-info .footer-unit {
       font-weight: 400;
-      margin: -1% auto 0 auto;
+      margin: -1% auto 2em auto;
       padding-bottom: 1em;
-      display: inline-block;
+      display: block;
       vertical-align: top; }
       footer .footer-info .footer-unit .footer-title {
         letter-spacing: 0.2em;
         margin-bottom: 1.5em;
-        font-size: .75em;
+        font-size: .65em;
         color: white;
         text-transform: uppercase; }
       footer .footer-info .footer-unit .button {
         position: relative;
         width: 100%; }
+        footer .footer-info .footer-unit .button i {
+          margin-left: 0.5em; }
 
 @media screen and (min-width: 480px) {
   .title-section {
