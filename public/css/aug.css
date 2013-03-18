@@ -77,13 +77,22 @@ body {
         font-size: .6em; }
       .content .blurbs .blurb .form-field {
         margin-bottom: 1em;
-        width: 16em; }
+        width: 23em; }
         .content .blurbs .blurb .form-field input, .content .blurbs .blurb .form-field textarea {
           float: right;
+          width: 20em;
           line-height: 1.4em;
-          margin-top: 0.3em; }
+          margin-top: 0.3em;
+          margin-right: 2em; }
         .content .blurbs .blurb .form-field.save-link {
           margin-top: 2em; }
+          .content .blurbs .blurb .form-field.save-link a {
+            padding-left: 3em;
+            padding-right: 3em; }
+        .content .blurbs .blurb .form-field.info-message.success {
+          color: green; }
+        .content .blurbs .blurb .form-field.info-message.error {
+          color: red; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;

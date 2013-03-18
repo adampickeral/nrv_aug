@@ -114,15 +114,32 @@ body {
 
       .form-field {
         margin-bottom: 1em;
-        width: 16em;
+        width: 23em;
         input, textarea {
-          float:right;
+          float: right;
+          width: 20em;
           line-height: 1.4em;
           margin-top: 0.3em;
+          margin-right: 2em;
         }
 
         &.save-link {
           margin-top: 2em;
+
+          a {
+            padding-left: 3em;
+            padding-right: 3em;
+          }
+        }
+
+        &.info-message {
+          &.success {
+            color: green;
+          }
+
+          &.error {
+            color: red;
+          }
         }
       }
     }

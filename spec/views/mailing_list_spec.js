@@ -71,7 +71,7 @@ describe('nrvaug.views.MailingList', function () {
 
     submitForm();
 
-    expectRequestMessageToBe('Request received. A confirmation email will be sent.');
+    expectRequestMessageToBe('Request received. A confirmation email will be sent.', 'success', 'error');
   });
 
   it('adds an error message on a failed request', function () {
@@ -90,7 +90,7 @@ describe('nrvaug.views.MailingList', function () {
 
     submitForm();
 
-    expectRequestMessageToBe('The request was unsuccessful. Please try again.');
+    expectRequestMessageToBe('The request was unsuccessful. Please try again.', 'error', 'success');
   });
 
   function submitForm() {
@@ -100,7 +100,9 @@ describe('nrvaug.views.MailingList', function () {
     submitButton.click();
   }
 
-  function expectRequestMessageToBe(message) {
+  function expectRequestMessageToBe(message, cssClass, notClass) {
     expect($('#mailing-list-request-message')[0].innerHTML).toBe(message);
+    expect($('.info-message').attr('class')).toContain(cssClass);
+    expect($('.info-message').attr('class')).not.toContain(notClass);
   }
 });

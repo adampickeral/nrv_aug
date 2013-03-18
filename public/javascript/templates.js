@@ -45,7 +45,7 @@ var mailingList =
       '<div class="form-field save-link">' +
         '<a class="button" id="mailing-list-submit">Submit</a>' +
       '</div>' +
-      '<div class="form-field">' +
+      '<div class="form-field info-message">' +
         '<div id="mailing-list-request-message"></div>' +
       '</div>' +
     '</div>' +
