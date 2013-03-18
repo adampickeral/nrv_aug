@@ -17,7 +17,13 @@ nrvaug.views.MailingList.prototype.handleFormSubmission_ = function () {
       'name': $('#mailing-list-name').val(),
       'email': $('#mailing-list-email').val()
     };
-    $.post('mailingList', data);
+    $.post('mailingList', data)
+      .done(function () {
+        $('#mailing-list-request-message').text('Request received. A confirmation email will be sent.');
+      })
+      .fail(function () {
+        $('#mailing-list-request-message').text('The request was unsuccessful. Please try again.');
+      });
   });
 };
 

@@ -39,17 +39,68 @@ describe('nrvaug.views.MailingList', function () {
   it('submits the name and email address on submit', function () {
     var post, submitButton;
 
-    post = spyOn($, 'post');
+    post = {
+      done: function (callback) {
+        return this;
+      },
+      fail: function (callback) {}
+    };
+    spyOn($, 'post').andReturn(post);
     view.render();
 
-    $('#mailing-list-name').val('Strongbad');
-    $('#mailing-list-email').val('hello@world.com');
-    submitButton = $('#mailing-list-submit')[0];
-    submitButton.click();
+    submitForm();
 
-    expect(post).toHaveBeenCalledWith(
+    expect($.post).toHaveBeenCalledWith(
       'mailingList', 
       {'name': 'Strongbad', 'email': 'hello@world.com'}
     );
   });
+
+  it('adds a success message on a successful request', function () {
+    var post, submitButton;
+
+    post = {
+      done: function (callback) {
+        callback();
+        return this;
+      },
+      fail: function (callback) {}
+    };
+    spyOn($, 'post').andReturn(post);
+    view.render();
+
+    submitForm();
+
+    expectRequestMessageToBe('Request received. A confirmation email will be sent.');
+  });
+
+  it('adds an error message on a failed request', function () {
+    var post, submitButton;
+
+    post = {
+      done: function (callback) {
+        return this;
+      },
+      fail: function (callback) {
+        callback();
+      }
+    };
+    spyOn($, 'post').andReturn(post);
+    view.render();
+
+    submitForm();
+
+    expectRequestMessageToBe('The request was unsuccessful. Please try again.');
+  });
+
+  function submitForm() {
+    $('#mailing-list-name').val('Strongbad');
+    $('#mailing-list-email').val('hello@world.com');
+    submitButton = $('#mailing-list-submit')[0];
+    submitButton.click();
+  }
+
+  function expectRequestMessageToBe(message) {
+    expect($('#mailing-list-request-message')[0].innerHTML).toBe(message);
+  }
 });
