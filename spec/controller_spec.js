@@ -1,10 +1,7 @@
 describe('nrvaug.Controller', function () {
-  var controller, location, mainView, meetingsView, globals;
+  var controller, location, mainView, meetingsView, mailingListView, globals;
 
   beforeEach(function () {
-    spyOn(nrvaug.templates, 'mainTmpl');
-    spyOn(nrvaug.templates, 'meetingsTmpl');
-
     location = {};
     mainView = {
       'render': jasmine.createSpy('render')
@@ -12,8 +9,12 @@ describe('nrvaug.Controller', function () {
     meetingsView = {
       'render': jasmine.createSpy('render')
     };
+    mailingListView = {
+      'render': jasmine.createSpy('render')
+    };
     spyOn(nrvaug.views, 'createMainView').andReturn(mainView);
     spyOn(nrvaug.views, 'createMeetingsView').andReturn(meetingsView);
+    spyOn(nrvaug.views, 'createMailingListView').andReturn(mailingListView);
     globals = {
       location: {
         hash: ''
@@ -45,6 +46,14 @@ describe('nrvaug.Controller', function () {
       controller.route();    
       
       expect(mainView.render).toHaveBeenCalled();
+    });
+
+    it('to mailing list if location is mailing list', function () {
+      globals.location.hash = '#mailingList';
+
+      controller.route();
+
+      expect(mailingListView.render).toHaveBeenCalled();
     });
   });
 

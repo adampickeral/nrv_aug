@@ -1,6 +1,18 @@
 {
-  "name": "",
+  "name": "fontello",
   "glyphs": [
+    {
+      "search": [
+        "info"
+      ],
+      "code": 8505,
+      "uid": "63b86fedd4ee9ad2105f54f4888e7088",
+      "css": "info",
+      "orig_css": "info",
+      "orig_code": 8505,
+      "src": "entypo",
+      "from": 8505
+    },
     {
       "search": [
         "arrow",
@@ -13,6 +25,61 @@
       "orig_code": 9656,
       "src": "entypo",
       "from": 9656
+    },
+    {
+      "search": [
+        "mail",
+        "email"
+      ],
+      "code": 9993,
+      "uid": "e335adbc2d898c7d85d40c507796e7b4",
+      "css": "mail",
+      "orig_css": "mail",
+      "orig_code": 9993,
+      "src": "entypo",
+      "from": 9993
+    },
+    {
+      "search": [
+        "ok",
+        true,
+        "check",
+        "mark"
+      ],
+      "code": 10003,
+      "uid": "14017aae737730faeda4a6fd8fb3a5f0",
+      "css": "check",
+      "orig_css": "check",
+      "orig_code": 10003,
+      "src": "entypo",
+      "from": 10003
+    },
+    {
+      "search": [
+        "close",
+        "cancel",
+        "reject"
+      ],
+      "code": 10005,
+      "from": 10005,
+      "uid": "c709da589c923ba3c2ad48d9fc563e93",
+      "css": "cancel",
+      "orig_css": "cancel",
+      "orig_code": 10005,
+      "src": "entypo"
+    },
+    {
+      "search": [
+        "help",
+        "question"
+      ],
+      "code": 10067,
+      "uid": "3a230e539a4f3b904debd04c6c155034",
+      "css": "help",
+      "orig_css": "help",
+      "orig_code": 10067,
+      "src": "entypo",
+      "from": 10067
     },
     {
       "search": [
@@ -39,6 +106,44 @@
       "orig_code": 58542,
       "src": "entypo",
       "from": 58542
+    },
+    {
+      "search": [
+        "help",
+        "question"
+      ],
+      "code": 59140,
+      "uid": "de9a631a7d18106aea1c89ba51b1990a",
+      "css": "help-circled",
+      "orig_css": "help-circled",
+      "orig_code": 59140,
+      "src": "entypo",
+      "from": 59140
+    },
+    {
+      "search": [
+        "info"
+      ],
+      "code": 59141,
+      "uid": "7e4164950ffa4990961958b2d6318658",
+      "css": "info-circled",
+      "orig_css": "info-circled",
+      "orig_code": 59141,
+      "src": "entypo",
+      "from": 59141
+    },
+    {
+      "search": [
+        "chat",
+        "talk"
+      ],
+      "code": 59168,
+      "uid": "2c0b53280f82068f6bab4e2200025d9f",
+      "css": "chat",
+      "orig_css": "chat",
+      "orig_code": 59168,
+      "src": "entypo",
+      "from": 59168
     },
     {
       "search": [

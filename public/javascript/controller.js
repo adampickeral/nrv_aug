@@ -15,6 +15,8 @@ nrvaug.Controller.prototype.route = function () {
     view = nrvaug.views.createMainView();
   } else if (hash === "meetings") {
     view = nrvaug.views.createMeetingsView();
+  } else if (hash === "mailingList") {
+    view = nrvaug.views.createMailingListView();
   } else {
     view = nrvaug.views.createMainView();
   }

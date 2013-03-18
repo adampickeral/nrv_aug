@@ -1,17 +1,10 @@
 nrvaug.views.Main = function () {
 
 };
+nrvaug.views.Main.prototype = new nrvaug.views.View();
 
-nrvaug.views.Main.prototype.render = function () {
-  var blurbs, template;
-
-  blurbs = $('.blurbs');
-  template = nrvaug.templates.mainTmpl();
-  if (blurbs.length === 0) {
-    $(".content").append(template);
-  } else {
-    blurbs.replaceWith(template);
-  }
+nrvaug.views.Main.prototype.getTemplate = function () {
+  return nrvaug.templates.mainTmpl();
 };
 
 nrvaug.views.createMainView = function () {
