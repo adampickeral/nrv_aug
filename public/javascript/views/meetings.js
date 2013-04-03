@@ -12,6 +12,10 @@ nrvaug.views.Meetings.prototype.getTemplate = function () {
   return nrvaug.templates.meetingsTmpl();
 };
 
+nrvaug.views.Meetings.prototype.getPageName = function () {
+  return 'Meetings';
+};
+
 nrvaug.views.Meetings.prototype.map_ = null;
 
 nrvaug.views.createMeetingsView = function (optMap) {

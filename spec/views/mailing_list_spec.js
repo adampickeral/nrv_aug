@@ -93,6 +93,12 @@ describe('nrvaug.views.MailingList', function () {
     expectRequestMessageToBe('The request was unsuccessful. Please try again.', 'error', 'success');
   });
 
+  it('sets the page name for tracking', function () {
+    view.render();
+
+    expect(view.getPageName()).toBe('Mailing List');
+  });
+
   function submitForm() {
     $('#mailing-list-name').val('Strongbad');
     $('#mailing-list-email').val('hello@world.com');

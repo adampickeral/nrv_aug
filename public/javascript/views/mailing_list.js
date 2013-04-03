@@ -35,6 +35,10 @@ nrvaug.views.MailingList.prototype.getTemplate = function () {
   return nrvaug.templates.mailingListTmpl();
 };
 
+nrvaug.views.MailingList.prototype.getPageName = function () {
+  return 'Mailing List';
+};
+
 nrvaug.views.createMailingListView = function () {
   return new nrvaug.views.MailingList();
 };
