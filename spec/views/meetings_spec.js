@@ -33,4 +33,10 @@ describe('nrvaug.views.Meetings', function () {
 
     expect(map.render).toHaveBeenCalled();
   });
+
+  it('sets the page name for tracking', function () {
+    view.render();
+
+    expect(view.getPageName()).toBe('Meetings');
+  });
 });

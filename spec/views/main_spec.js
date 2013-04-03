@@ -24,4 +24,8 @@ describe('nrvaug.views.Main', function () {
     content = $(".content")[0];
     expect(content.innerHTML).toBe(nrvaug.templates.mainTmpl());
   });
+
+  it('sets the name of the page for tracking', function () {
+    expect(view.getPageName()).toBe('Main');
+  });
 });

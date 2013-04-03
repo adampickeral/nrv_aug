@@ -12,7 +12,7 @@ server.set('views', __dirname + '/views');
 
 // Main route to the app
 server.get('/', function (req, res) {
-  res.render('index.ejs');
+  res.render('index.ejs', {locals: {segmentKey: config.segmentKey}});
 });
 
 // Confirm mailing list subscription and add user to the list
