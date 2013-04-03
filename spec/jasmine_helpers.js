@@ -39,3 +39,7 @@ jasmine.currentFixtures_ = null;
 afterEach(function () {
   jasmine.getFixtures().cleanUp();
 });
+
+var analytics = {
+  'track': jasmine.createSpy('track')
+};

@@ -11,6 +11,8 @@ nrvaug.views.View.prototype.render = function () {
   } else {
     blurbs.replaceWith(this.getTemplate());
   }
+  analytics.track(this.getPageName());
 };
 
 nrvaug.views.View.prototype.getTemplate = null;
+nrvaug.views.View.prototype.getPageName = null;

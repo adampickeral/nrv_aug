@@ -1,11 +1,17 @@
+var analytics = {};
+
 describe('nrvaug.views.View', function () {
   var view;
 
   beforeEach(function () {
     setFixtures('<section class="content"></section>');
+    analytics.track = jasmine.createSpy('track');
     view = new nrvaug.views.View();
     view.getTemplate = function () {
       return 'Hello there';
+    };
+    view.getPageName = function () {
+      return 'Page Name';
     };
   });
 
@@ -27,5 +33,11 @@ describe('nrvaug.views.View', function () {
 
     content = $('.content')[0];
     expect(content.innerHTML).toBe('Hello there');
+  });
+
+  it('tracks the page view', function () {
+    view.render();
+    
+    expect(analytics.track).toHaveBeenCalledWith(view.getPageName());
   });
 });
