@@ -22,9 +22,9 @@ var meetings =
     '<div class="blurb">' +
       '<h2>Meetings</h2>' +
       '<p class="blurb-content">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-      '<p class="blurb-content">Our next meeting will be on Tuesday April 9th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg.</p>' +
-      '<p class="blurb-content">Please <a class="info-link" href="http://www.signupgenius.com/go/60B0C4CA9AD2FA64-augapril" target="blank">click here</a> to RSVP.</p>' +
-      '<p class="blurb-content">Fill out <a class="info-link" href="http://www.surveymonkey.com/s/V9JBNPK" target="blank">this survey</a> to vote on topics.</p>' +
+      '<p class="blurb-content">Our next meeting will be on Tuesday May 14th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg.</p>' +
+      '<p class="blurb-content">Please <a class="info-link" href="http://www.signupgenius.com/go/60B0C4CA9AD2FA64-augmay" target="blank">click here</a> to RSVP.</p>' +
+      '<p class="blurb-content">Our next meeting will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
     '</div>' +
     '<div class="blurb">' +
       '<div id="map-canvas"></div>' +
@@ -34,6 +34,8 @@ var meetings =
 var mailingList = 
   '<div class="blurbs">' +
     '<div class="blurb">' +
+      '<h2>Mailing List</h2>' +
+      '<p class="blurb-content">Fill out the form below to keep up to date with Agile NRV.</p>' +
       '<div class="form-field">' +
         '<label for="mailing-list-name">Name</label>' +
         '<input id="mailing-list-name" type="text">' +
