@@ -52,7 +52,7 @@ body {
     padding: 0.6em;
     color: $dark-blue;
     border: solid $dark-blue;
-    font-size: .9em;
+    font-size: 1em;
 
     a {
       font-size: .7em;
@@ -114,10 +114,10 @@ body {
 
       .form-field {
         margin-bottom: 1em;
-        width: 23em;
+        width: 100%;
         input, textarea {
           float: right;
-          width: 20em;
+          width: 70%;
           line-height: 1.4em;
           margin-top: 0.3em;
           margin-right: 2em;
@@ -255,6 +255,37 @@ footer {
       .blurb {
         padding-bottom: 2em;
         margin-right: 0;
+
+        .form-field {
+          margin-bottom: 1em;
+          width: 23em;
+          input, textarea {
+            float: right;
+            width: 20em;
+            line-height: 1.4em;
+            margin-top: 0.3em;
+            margin-right: 2em;
+          }
+
+          &.save-link {
+            margin-top: 2em;
+
+            a {
+              padding-left: 3em;
+              padding-right: 3em;
+            }
+          }
+
+          &.info-message {
+            &.success {
+              color: green;
+            }
+
+            &.error {
+              color: red;
+            }
+          }
+        }
       }
     }
   }

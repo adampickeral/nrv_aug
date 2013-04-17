@@ -34,6 +34,8 @@ var meetings =
 var mailingList = 
   '<div class="blurbs">' +
     '<div class="blurb">' +
+      '<h2>Mailing List</h2>' +
+      '<p class="blurb-content">Fill out the form below to keep up to date with Agile NRV.</p>' +
       '<div class="form-field">' +
         '<label for="mailing-list-name">Name</label>' +
         '<input id="mailing-list-name" type="text">' +

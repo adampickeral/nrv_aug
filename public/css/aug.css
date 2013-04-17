@@ -38,7 +38,7 @@ body {
     padding: 0.6em;
     color: #01406c;
     border: solid #01406c;
-    font-size: .9em; }
+    font-size: 1em; }
     .title-section .announcement a {
       font-size: .7em;
       font-weight: 700;
@@ -77,10 +77,10 @@ body {
         font-size: .6em; }
       .content .blurbs .blurb .form-field {
         margin-bottom: 1em;
-        width: 23em; }
+        width: 100%; }
         .content .blurbs .blurb .form-field input, .content .blurbs .blurb .form-field textarea {
           float: right;
-          width: 20em;
+          width: 70%;
           line-height: 1.4em;
           margin-top: 0.3em;
           margin-right: 2em; }
@@ -164,7 +164,25 @@ footer {
       width: 95%; }
       .content .blurbs .blurb {
         padding-bottom: 2em;
-        margin-right: 0; } }
+        margin-right: 0; }
+        .content .blurbs .blurb .form-field {
+          margin-bottom: 1em;
+          width: 23em; }
+          .content .blurbs .blurb .form-field input, .content .blurbs .blurb .form-field textarea {
+            float: right;
+            width: 20em;
+            line-height: 1.4em;
+            margin-top: 0.3em;
+            margin-right: 2em; }
+          .content .blurbs .blurb .form-field.save-link {
+            margin-top: 2em; }
+            .content .blurbs .blurb .form-field.save-link a {
+              padding-left: 3em;
+              padding-right: 3em; }
+          .content .blurbs .blurb .form-field.info-message.success {
+            color: green; }
+          .content .blurbs .blurb .form-field.info-message.error {
+            color: red; } }
 @media screen and (min-width: 1200px) {
   body {
     font-size: 1.4em; }
