@@ -20,6 +20,9 @@ body {
 #size {
   float: left; }
 
+h3 {
+  font-weight: 700; }
+
 .title-section {
   background-color: #0087be;
   height: 7em; }
@@ -99,6 +102,12 @@ body {
       text-indent: -1em; }
       .content .blurbs ul li b {
         color: black; }
+  .content books book author {
+    display: block;
+    font-style: italic;
+    font-weight: 400; }
+  .content books book synopsis {
+    display: block; }
 
 footer {
   background-color: #01406c;

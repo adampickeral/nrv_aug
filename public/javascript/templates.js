@@ -55,6 +55,20 @@ var mailingList =
 
 var resources = 
   '<div class="blurbs">' +
+    '<div class="blurb">' +
+      '<h2>Books</h2>' +
+      '<books>' +
+        '<book>' +
+          '<img src="/images/art_of_agile_development.gif">' +
+          '<h3>The Art of Agile Development</h3>' +
+          '<author>James Shore</author>' +
+          '<synopsis>Shore provides a detailed look at eXtreme Programming, explaining topics such as team roles, practices, work environment, and even why one would choose to be agile and utilize XP within their development process. An excellent resource for new and experienced agile practitioners.</synopsis>' +
+        '</book>' +
+      '</books>' +
+    '</div>' +
+    '<div class="blurb">' +
+      '<h2>Blogs</h2>' +
+    '</div>' +
   '</div>';
 
 nrvaug.templates.mainTmpl = Mustache.compile(main);
