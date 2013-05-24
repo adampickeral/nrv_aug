@@ -53,9 +53,11 @@ var mailingList =
     '</div>' +
   '</div>';
 
-var mainTmpl = Mustache.compile(main);
-var meetingsTmpl = Mustache.compile(meetings);
+var resources = 
+  '<div class="blurbs">' +
+  '</div>';
 
 nrvaug.templates.mainTmpl = Mustache.compile(main);
 nrvaug.templates.meetingsTmpl = Mustache.compile(meetings);
 nrvaug.templates.mailingListTmpl = Mustache.compile(mailingList);
+nrvaug.templates.resourcesTmpl = Mustache.compile(resources);
