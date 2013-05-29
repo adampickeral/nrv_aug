@@ -102,12 +102,19 @@ h3 {
       text-indent: -1em; }
       .content .blurbs ul li b {
         color: black; }
+  .content books book.first img {
+    margin-top: 0; }
+  .content books book img {
+    margin-top: 1.5em; }
+  .content books book h3 {
+    margin-top: 0.3em; }
   .content books book author {
     display: block;
     font-style: italic;
     font-weight: 400; }
   .content books book synopsis {
-    display: block; }
+    display: block;
+    margin-top: 0.1em; }
 
 footer {
   background-color: #01406c;
