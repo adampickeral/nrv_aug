@@ -76,6 +76,12 @@ var resources =
           '<author>Lisa Crispin, Janet Gregory</author>' +
           '<synopsis>This books explains the differences between testing in a traditional development process and testing in an agile process. The role of the tester changes from a reactive to a proactive one, and the approach to testing shifts from developing a test plan to a test strategy. The agile testing matrix is used to explain all the different types of testing needed on an agile project.</synopsis>' +
         '</book>' +
+        '<book>' +
+          '<div class="image"><img src="/images/agile_retrospectives.jpg"></div>' +
+          '<h3>Agile Retrospectives: Making Good Teams Great</h3>' +
+          '<author>Esther Derby, Janet Larsen</author>' +
+          '<synopsis>An excellent resource for teams needing to improve their retrospective. This book explains the basic format of a retrospective as well as how to lead a retrospective and manage the activities and people involved. A multitude of activities are provided to help teams actively engage in mining information about their process and deciding what improvements need to be made.</synopsis>' +
+        '</book>' +
       '</books>' +
     '</div>' +
     '<div class="blurb">' +
