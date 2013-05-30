@@ -102,10 +102,15 @@ h3 {
       text-indent: -1em; }
       .content .blurbs ul li b {
         color: black; }
-  .content books book.first img {
+  .content books book.first .image {
     margin-top: 0; }
-  .content books book img {
-    margin-top: 1.5em; }
+  .content books book .image {
+    margin-top: 1.5em;
+    width: 6em;
+    height: 7.6666667em; }
+    .content books book .image img {
+      max-height: 100%;
+      max-width: 100%; }
   .content books book h3 {
     margin-top: 0.3em; }
   .content books book author {

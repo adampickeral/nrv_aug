@@ -162,12 +162,18 @@ h3 {
   books {
     book {
 
-      &.first img {
+      &.first .image {
         margin-top: 0;
       }
 
-      img {
+      .image {
         margin-top: 1.5em;
+        width: 6em;
+        height: 7.6666667em;
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
       }
       h3 {
         margin-top: 0.3em;
