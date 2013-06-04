@@ -104,6 +104,10 @@ h3 {
         color: black; }
   .content resources resource.first .image {
     margin-top: 0; }
+  .content resources resource.first .info-link {
+    margin-top: 0; }
+  .content resources resource .info-link {
+    margin-top: 1.5em; }
   .content resources resource .image {
     margin-top: 1.5em;
     width: 6em;
