@@ -57,35 +57,42 @@ var resources =
   '<div class="blurbs">' +
     '<div class="blurb">' +
       '<h2>Books</h2>' +
-      '<books>' +
-        '<book class="first">' +
+      '<resources>' +
+        '<resource class="first">' +
           '<div class="image"><img src="/images/art_of_agile_development.gif"></div>' +
           '<h3>The Art of Agile Development</h3>' +
           '<author>James Shore, Shane Warden</author>' +
           '<synopsis>Shore provides a detailed look at eXtreme Programming, explaining topics such as team roles, practices, work environment, and even why one would choose to be agile and utilize XP within their development process. An excellent resource for new and experienced agile practitioners.</synopsis>' +
-        '</book>' +
-        '<book>' +
+        '</resource>' +
+        '<resource>' +
           '<div class="image"><img src="/images/user_stories_applied.jpg"></div>' +
           '<h3>User Stories Applied</h3>' +
           '<author>Mike Cohn</author>' +
           '<synopsis>Cohn covers the ins and outs of user stories, discussing what they are, what makes a good user story, and also what makes a bad user story. He also explains how to use user stories when you don\'t have access to a user, as well as how to prioritize and estimate user stories.</synopsis>' +
-        '</book>' +
-        '<book>' +
+        '</resource>' +
+        '<resource>' +
           '<div class="image"><img src="/images/agile_testing.jpg"></div>' +
           '<h3>Agile Testing: A Practical Guide for Testers and Agile Teams</h3>' +
           '<author>Lisa Crispin, Janet Gregory</author>' +
           '<synopsis>This books explains the differences between testing in a traditional development process and testing in an agile process. The role of the tester changes from a reactive to a proactive one, and the approach to testing shifts from developing a test plan to a test strategy. The agile testing matrix is used to explain all the different types of testing needed on an agile project.</synopsis>' +
-        '</book>' +
-        '<book>' +
+        '</resource>' +
+        '<resource>' +
           '<div class="image"><img src="/images/agile_retrospectives.jpg"></div>' +
           '<h3>Agile Retrospectives: Making Good Teams Great</h3>' +
           '<author>Esther Derby, Janet Larsen</author>' +
           '<synopsis>An excellent resource for teams needing to improve their retrospective. This book explains the basic format of a retrospective as well as how to lead a retrospective and manage the activities and people involved. A multitude of activities are provided to help teams actively engage in mining information about their process and deciding what improvements need to be made.</synopsis>' +
-        '</book>' +
-      '</books>' +
+        '</resource>' +
+      '</resources>' +
     '</div>' +
     '<div class="blurb">' +
       '<h2>Blogs</h2>' +
+      '<resources>' +
+        '<resource class="first">' +
+          '<h3 class="info-link"><a href="http://xprogramming.com/index.php" target="_blank">XProgramming.com</a></h3>' +
+          '<author>Ron Jeffries</author>' +
+          '<synopsis>A collection of articles, both opinion based and anecdotal, on the values and practices of eXtreme Programming from the mind of Ron Jeffries, one of the three founders of XP.</synopsis>' +
+        '</resource>' +
+      '</resources>' +
     '</div>' +
   '</div>';
 
