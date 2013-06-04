@@ -124,6 +124,8 @@ h3 {
   .content resources resource synopsis {
     display: block;
     margin-top: 0.1em; }
+  .content resources resource reference {
+    font-style: italic; }
 
 footer {
   background-color: #01406c;
@@ -167,8 +169,7 @@ footer {
   .content {
     padding-bottom: 5%; }
     .content .navigation {
-      width: 95%;
-      margin: 0 auto; }
+      width: 95%; }
       .content .navigation ul {
         width: 100%;
         margin: 0 auto;
@@ -176,7 +177,7 @@ footer {
         padding-bottom: 1em; }
         .content .navigation ul li {
           display: inline-block;
-          width: 40%;
+          width: 27%;
           margin: 0 auto 0 6%;
           border: 0; }
           .content .navigation ul li a {

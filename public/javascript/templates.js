@@ -95,12 +95,12 @@ var resources =
         '<resource>' +
           '<h3 class="info-link"><a href="http://www.jamesshore.com/Blog/" target="_blank">jamesshore.com</a></h3>' +
           '<author>James Shore</author>' +
-          '<synopsis>James Shore, author of "The Art of Agile Development", covers a vast array of topics on agile development in this blog. He also has an excellent series on test-driven development, offered for free in Java and with a paid subscription in Javascript.</synopsis>' +
+          '<synopsis>James Shore, author of <reference>The Art of Agile Development</reference>, covers a vast array of topics on agile development in this blog. He also has an excellent series on test-driven development, offered for free in Java and with a paid subscription in Javascript.</synopsis>' +
         '</resource>' +
         '<resource>' +
           '<h3 class="info-link"><a href="http://martinfowler.com/" target="_blank">martinfowler.com</a></h3>' +
           '<author>Martin Fowler</author>' +
-          '<synopsis>Martin Fowler works for ThoughtWorks and is the author of several books on Agile Development, including Planning Extreme Programming. Here you will find Martin\'s thoughts on Agile Development and Software Design.</synopsis>' +
+          '<synopsis>Martin Fowler works for ThoughtWorks and is the author of several books on Agile Development, including <reference>Planning Extreme Programming</reference>. Here you will find Martin\'s thoughts on Agile Development and Software Design.</synopsis>' +
         '</resource>' +
       '</resources>' +
     '</div>' +
