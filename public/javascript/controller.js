@@ -19,6 +19,8 @@ nrvaug.Controller.prototype.route = function () {
     view = nrvaug.views.createMailingListView();
   } else if (hash === "resources") {
     view = nrvaug.views.createResourcesView();
+  } else if (hash === "blog") {
+    view = nrvaug.views.createBlogView();
   } else {
     view = nrvaug.views.createMainView();
   }

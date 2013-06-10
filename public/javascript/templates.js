@@ -106,7 +106,15 @@ var resources =
     '</div>' +
   '</div>';
 
+var blog = 
+  '<div class="blurbs">' +
+    '<div class="blurb">' +
+      '<h2>Meetings</h2>' +
+    '</div>' +
+  '</div>';
+
 nrvaug.templates.mainTmpl = Mustache.compile(main);
 nrvaug.templates.meetingsTmpl = Mustache.compile(meetings);
 nrvaug.templates.mailingListTmpl = Mustache.compile(mailingList);
 nrvaug.templates.resourcesTmpl = Mustache.compile(resources);
+nrvaug.templates.blogTmpl = Mustache.compile(blog);
