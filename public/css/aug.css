@@ -96,12 +96,21 @@ h3 {
           color: green; }
         .content .blurbs .blurb .form-field.info-message.error {
           color: red; }
+      .content .blurbs .blurb blog h2 {
+        margin-bottom: 0.3em; }
+      .content .blurbs .blurb blog date {
+        font-weight: 400;
+        font-style: italic; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
       text-indent: -1em; }
       .content .blurbs ul li b {
         color: black; }
+  .content author {
+    display: block;
+    font-style: italic;
+    font-weight: 400; }
   .content resources resource.first .image {
     margin-top: 0; }
   .content resources resource.first .info-link {
@@ -117,10 +126,6 @@ h3 {
       max-width: 100%; }
   .content resources resource h3 {
     margin-top: 0.3em; }
-  .content resources resource author {
-    display: block;
-    font-style: italic;
-    font-weight: 400; }
   .content resources resource synopsis {
     display: block;
     margin-top: 0.1em; }

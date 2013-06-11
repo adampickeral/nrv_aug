@@ -109,7 +109,11 @@ var resources =
 var blog = 
   '<div class="blurbs">' +
     '<div class="blurb">' +
-      '<h2>Blog</h2>' +
+      '<blog>' +
+        '<h2>June Meeting</h2>' +
+        '<author>Adam Pickeral</author>' +
+        '<date>6/11/13</date>' +
+      '</blog>' +
     '</div>' +
   '</div>';
 
