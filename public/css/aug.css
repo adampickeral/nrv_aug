@@ -167,18 +167,23 @@ footer {
     width: 95%; }
 
   .content {
+    min-height: 314px;
+    padding-top: 2em;
     padding-bottom: 5%; }
     .content .navigation {
-      width: 95%; }
+      float: left;
+      width: 15%;
+      margin-left: 0.5em; }
       .content .navigation ul {
         width: 100%;
         margin: 0 auto;
         padding-top: 1em;
         padding-bottom: 1em; }
         .content .navigation ul li {
-          display: inline-block;
-          width: 27%;
+          display: block;
+          width: 100%;
           margin: 0 auto 0 6%;
+          margin-bottom: 1em;
           border: 0; }
           .content .navigation ul li a {
             height: 0;
@@ -186,8 +191,9 @@ footer {
             padding-top: 0.8em;
             padding-bottom: 2.2em; }
     .content .blurbs {
-      margin: 0 auto;
-      width: 95%; }
+      min-height: 314px;
+      width: 62%;
+      margin-left: 19%; }
       .content .blurbs .blurb {
         padding-bottom: 2em; }
         .content .blurbs .blurb .form-field {
@@ -212,19 +218,5 @@ footer {
       border: solid #0087be;
       width: 60%; }
 
-  .content {
-    padding-top: 2em;
-    min-height: 314px; }
-    .content .navigation {
-      float: left;
-      width: 15%;
-      margin-left: 0.5em; }
-      .content .navigation ul {
-        width: 100%; }
-        .content .navigation ul li {
-          width: 100%;
-          display: block;
-          margin-bottom: 1em; }
-    .content .blurbs {
-      width: 62%;
-      margin-left: 19%; } }
+  .content .blurbs {
+    min-height: 17em; } }
