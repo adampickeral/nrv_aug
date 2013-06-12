@@ -6,7 +6,7 @@ body {
   background-color: $dark-blue;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.5em;
   height: 100%;
   font-size: 1.1em;
   letter-spacing: 0.05em;
@@ -94,11 +94,10 @@ h3 {
     }
 
     .blurb {
-      padding-left: 1em;
       padding-top: 0.75em;
       padding-bottom: 0.75em;
-      
-      margin-right: 1em;
+      margin-left: 10%;
+      margin-right: 10%;
 
       p {
         margin-bottom: 0.25em;

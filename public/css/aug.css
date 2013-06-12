@@ -2,7 +2,7 @@ body {
   background-color: #01406c;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.5em;
   height: 100%;
   font-size: 1.1em;
   letter-spacing: 0.05em; }
@@ -64,10 +64,10 @@ h3 {
     .content .blurbs .info-link {
       color: #0087be; }
     .content .blurbs .blurb {
-      padding-left: 1em;
       padding-top: 0.75em;
       padding-bottom: 0.75em;
-      margin-right: 1em; }
+      margin-left: 10%;
+      margin-right: 10%; }
       .content .blurbs .blurb p {
         margin-bottom: 0.25em; }
       .content .blurbs .blurb h2 {
