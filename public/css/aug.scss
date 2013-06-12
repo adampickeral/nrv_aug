@@ -6,9 +6,10 @@ body {
   background-color: $dark-blue;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.5em;
   height: 100%;
   font-size: 1.1em;
+  letter-spacing: 0.05em;
 }
 
 .button {
@@ -93,11 +94,10 @@ h3 {
     }
 
     .blurb {
-      padding-left: 1em;
       padding-top: 0.75em;
       padding-bottom: 0.75em;
-      
-      margin-right: 1em;
+      margin-left: 10%;
+      margin-right: 10%;
 
       p {
         margin-bottom: 0.25em;
@@ -146,6 +146,29 @@ h3 {
           }
         }
       }
+
+      blog {
+        h2 {
+          margin-bottom: 0.3em;
+        }
+        
+        date {
+          font-weight: 400;
+          font-style: italic;
+        }
+
+        section {
+          margin-top: 1em;
+
+          p {
+            margin-top: 1em;
+
+            &.first {
+              margin-top: 0;
+            }
+          }
+        }
+      }
     }
 
     ul {
@@ -157,6 +180,12 @@ h3 {
         color: black;
       }
     }
+  }
+
+  author {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
   }
 
   resources {
@@ -185,11 +214,6 @@ h3 {
       }
       h3 {
         margin-top: 0.3em;
-      }
-      author {
-        display: block;
-        font-style: italic;
-        font-weight: 400;
       }
       synopsis {
         display: block;
@@ -264,9 +288,13 @@ footer {
 
   }
   .content {
+    min-height: 314px;
+    padding-top: 2em;
     padding-bottom: 5%;
     .navigation {
-      width: 95%;
+      float: left;
+      width: 15%;
+      margin-left: 0.5em;
       
       ul {
         width: 100%;
@@ -275,9 +303,10 @@ footer {
         padding-bottom: 1em;
 
         li {
-          display: inline-block;
-          width: 27%;
+          display: block;
+          width: 100%;
           margin: 0 auto 0 6%;
+          margin-bottom: 1em;
           border: 0;
 
           a {
@@ -291,8 +320,9 @@ footer {
     }
 
     .blurbs {
-      margin: 0 auto;
-      width: 95%;
+      min-height: 314px;
+      width: 62%;
+      margin-left: 19%;
       .blurb {
         padding-bottom: 2em;
 
@@ -334,27 +364,8 @@ footer {
   }
   
   .content {
-    padding-top: 2em;
-    min-height: 314px;
-
-    .navigation {
-      float: left;
-      width: 15%;
-      margin-left: 0.5em;
-
-      ul {
-        width: 100%;
-        li {
-          width: 100%;
-          display: block;
-          margin-bottom: 1em;
-        }
-      }
-    }
-
     .blurbs {
-      width: 62%;
-      margin-left: 19%;
+      min-height: 17em;
     }
   }
 }
