@@ -4,7 +4,8 @@ body {
   font-weight: 300;
   line-height: 1.4em;
   height: 100%;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  letter-spacing: 0.05em; }
 
 .button {
   background-color: #0087be;
@@ -101,6 +102,12 @@ h3 {
       .content .blurbs .blurb blog date {
         font-weight: 400;
         font-style: italic; }
+      .content .blurbs .blurb blog section {
+        margin-top: 1em; }
+        .content .blurbs .blurb blog section p {
+          margin-top: 1em; }
+          .content .blurbs .blurb blog section p.first {
+            margin-top: 0; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
