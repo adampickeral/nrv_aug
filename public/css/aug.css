@@ -2,9 +2,10 @@ body {
   background-color: #01406c;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.5em;
   height: 100%;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  letter-spacing: 0.05em; }
 
 .button {
   background-color: #0087be;
@@ -63,10 +64,10 @@ h3 {
     .content .blurbs .info-link {
       color: #0087be; }
     .content .blurbs .blurb {
-      padding-left: 1em;
       padding-top: 0.75em;
       padding-bottom: 0.75em;
-      margin-right: 1em; }
+      margin-left: 10%;
+      margin-right: 10%; }
       .content .blurbs .blurb p {
         margin-bottom: 0.25em; }
       .content .blurbs .blurb h2 {
@@ -96,12 +97,27 @@ h3 {
           color: green; }
         .content .blurbs .blurb .form-field.info-message.error {
           color: red; }
+      .content .blurbs .blurb blog h2 {
+        margin-bottom: 0.3em; }
+      .content .blurbs .blurb blog date {
+        font-weight: 400;
+        font-style: italic; }
+      .content .blurbs .blurb blog section {
+        margin-top: 1em; }
+        .content .blurbs .blurb blog section p {
+          margin-top: 1em; }
+          .content .blurbs .blurb blog section p.first {
+            margin-top: 0; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
       text-indent: -1em; }
       .content .blurbs ul li b {
         color: black; }
+  .content author {
+    display: block;
+    font-style: italic;
+    font-weight: 400; }
   .content resources resource.first .image {
     margin-top: 0; }
   .content resources resource.first .info-link {
@@ -117,10 +133,6 @@ h3 {
       max-width: 100%; }
   .content resources resource h3 {
     margin-top: 0.3em; }
-  .content resources resource author {
-    display: block;
-    font-style: italic;
-    font-weight: 400; }
   .content resources resource synopsis {
     display: block;
     margin-top: 0.1em; }
@@ -167,18 +179,23 @@ footer {
     width: 95%; }
 
   .content {
+    min-height: 314px;
+    padding-top: 2em;
     padding-bottom: 5%; }
     .content .navigation {
-      width: 95%; }
+      float: left;
+      width: 15%;
+      margin-left: 0.5em; }
       .content .navigation ul {
         width: 100%;
         margin: 0 auto;
         padding-top: 1em;
         padding-bottom: 1em; }
         .content .navigation ul li {
-          display: inline-block;
-          width: 27%;
+          display: block;
+          width: 100%;
           margin: 0 auto 0 6%;
+          margin-bottom: 1em;
           border: 0; }
           .content .navigation ul li a {
             height: 0;
@@ -186,8 +203,9 @@ footer {
             padding-top: 0.8em;
             padding-bottom: 2.2em; }
     .content .blurbs {
-      margin: 0 auto;
-      width: 95%; }
+      min-height: 314px;
+      width: 62%;
+      margin-left: 19%; }
       .content .blurbs .blurb {
         padding-bottom: 2em; }
         .content .blurbs .blurb .form-field {
@@ -212,19 +230,5 @@ footer {
       border: solid #0087be;
       width: 60%; }
 
-  .content {
-    padding-top: 2em;
-    min-height: 314px; }
-    .content .navigation {
-      float: left;
-      width: 15%;
-      margin-left: 0.5em; }
-      .content .navigation ul {
-        width: 100%; }
-        .content .navigation ul li {
-          width: 100%;
-          display: block;
-          margin-bottom: 1em; }
-    .content .blurbs {
-      width: 62%;
-      margin-left: 19%; } }
+  .content .blurbs {
+    min-height: 17em; } }
