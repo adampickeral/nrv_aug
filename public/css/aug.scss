@@ -116,6 +116,10 @@ h3 {
         font-size: .6em;
       }
 
+      .form {
+        padding-top: 2em;
+      }
+
       .form-field {
         margin-bottom: 1em;
         width: 100%;
@@ -125,6 +129,20 @@ h3 {
           line-height: 1.4em;
           margin-top: 0.3em;
           margin-right: 2em;
+        }
+
+        .option-group {
+          float: right;
+          width: 10.5em;
+
+          label {
+            margin-right: 1em;
+          }
+          input {
+            float: none;
+            width: 1em;
+            margin-right: 0.6em
+          }
         }
 
         &.save-link {
@@ -328,6 +346,11 @@ footer {
 
         .form-field {
           width: 23em;
+
+          .option-group {
+            width: 13.5em;
+          }
+
           input, textarea {
             width: 20em;
           }
