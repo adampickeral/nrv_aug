@@ -71,5 +71,45 @@ server.post('/mailingList', function (req, res) {
   });
 });
 
+// rsvp to meeting; sends confirmation email and email to organizers list
+server.post('/rsvp', function (req, res) {
+  var name, email, reply;
+
+  data = '';
+  req.on('data', function (chunk) {
+    data += chunk;
+  });
+
+  req.on ('end', function () {
+    requestBody = qs.parse(data);
+    options = {
+      url: config.sendMessage,
+      auth: {
+        user: config.user,
+        pass: config.key
+      },
+      form: {
+        from: 'donotreply@agilenrv.org',
+        to: requestBody.email,
+        subject: 'AUG Meeting RSVP',
+        text: 'Thanks for RSVP\'ing to the meeting. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
+      }
+    };
+
+    request.post(options, function (error, response, body) {
+      if (response.statusCode < 200 || response.statusCode >= 300) {
+        res.status(response.statusCode).send(body);
+      } else {
+        options.form.from = 'rsvp@agilenrv.org';
+        options.form.to = 'organizers@agilenrv.org';
+        options.form.text = 'RSVP for ' + requestBody.name + ' ' + requestBody.email + ': ' + requestBody.reply;
+        request.post(options, function (err, resp, bod) {
+          res.status(resp.statusCode).send(bod);
+        });
+      }
+    });
+  });
+});
+
 server.listen(3000);
 console.log('Listening on port 3000');
