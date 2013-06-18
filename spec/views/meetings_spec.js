@@ -1,12 +1,15 @@
 describe('nrvaug.views.Meetings', function () {
-  var view, map;
+  var view, map, rsvpForm;
 
   beforeEach(function () {
     setFixtures('<section class="content"></section>');
     map = {
       render: jasmine.createSpy('render')
     };
-    view = nrvaug.views.createMeetingsView(map);
+    rsvpForm = {
+      render: jasmine.createSpy('render')
+    };
+    view = nrvaug.views.createMeetingsView(map, rsvpForm);
     view.render();
   });
 
@@ -29,14 +32,14 @@ describe('nrvaug.views.Meetings', function () {
   });
 
   it('renders the map', function () {
-    view.render();
-
     expect(map.render).toHaveBeenCalled();
   });
 
   it('sets the page name for tracking', function () {
-    view.render();
-
     expect(view.getPageName()).toBe('Meetings');
+  });
+
+  it('renders the rsvp form', function () {
+    expect(rsvpForm.render).toHaveBeenCalledWith($('.form'));
   });
 });

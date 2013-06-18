@@ -24,7 +24,7 @@ var meetings =
       '<p class="blurb-content">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
       '<p class="blurb-content">Our next meeting will be on Tuesday June 11th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
       '<div class="form">' +
-        '<p class="blurb-content">Don\t forget to RSVP!</p>' +
+        '<h3>Don\'t forget to RSVP!</h3>' +
         '<div class="form-field">' +
           '<label for="rsvp-name">Name</label>' +
           '<input id="rsvp-name" type="text">' +
