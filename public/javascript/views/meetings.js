@@ -11,7 +11,7 @@ nrvaug.views.Meetings.prototype.render = function () {
 };
 
 nrvaug.views.Meetings.prototype.getTemplate = function () {
-  return nrvaug.templates.meetingsTmpl();
+  return nrvaug.templates.meetingsTmpl({challenge: challenge});
 };
 
 nrvaug.views.Meetings.prototype.getPageName = function () {

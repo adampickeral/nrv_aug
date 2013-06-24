@@ -42,6 +42,11 @@ var meetings =
             '<label for="rsvp-attending-no">No</label>' +
           '</div>' +
         '</div>' +
+        '<div class="form-field">' +
+          '<label for="security-challenge-question">What is this a picture of?</label>' +
+          '<div id="security-challenge-image"><img src="/images/secure_image_{{ challenge }}.png"></div>' +
+          '<input id="security-challenge-question" name="security-challenge-question" type="text">' +
+        '</div>' +
         '<div class="form-field save-link">' +
           '<a class="button" id="rsvp-submit">Submit</a>' +
         '</div>' +

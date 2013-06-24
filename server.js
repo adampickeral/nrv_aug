@@ -12,7 +12,10 @@ server.set('views', __dirname + '/views');
 
 // Main route to the app
 server.get('/', function (req, res) {
-  res.render('index.ejs', {locals: {segmentKey: config.segmentKey}});
+  var challenge;
+
+  challenge = Math.floor((Math.random()*3)+1);
+  res.render('index.ejs', {locals: {segmentKey: config.segmentKey, challenge: challenge}});
 });
 
 // Confirm mailing list subscription and add user to the list
@@ -81,6 +84,8 @@ server.post('/rsvp', function (req, res) {
   });
 
   req.on ('end', function () {
+    var options;
+    
     requestBody = qs.parse(data);
     options = {
       url: config.sendMessage,

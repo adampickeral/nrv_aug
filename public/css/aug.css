@@ -86,21 +86,28 @@ h3 {
       .content .blurbs .blurb .form-field {
         margin-bottom: 1em;
         width: 100%; }
+        .content .blurbs .blurb .form-field label {
+          display: block; }
         .content .blurbs .blurb .form-field input, .content .blurbs .blurb .form-field textarea {
-          float: right;
           width: 70%;
           line-height: 1.4em;
           margin-top: 0.3em;
           margin-right: 2em; }
         .content .blurbs .blurb .form-field .option-group {
-          float: right;
           width: 10.5em; }
           .content .blurbs .blurb .form-field .option-group label {
-            margin-right: 1em; }
+            margin-right: 1em;
+            display: inline; }
           .content .blurbs .blurb .form-field .option-group input {
             float: none;
             width: 1em;
             margin-right: 0.6em; }
+        .content .blurbs .blurb .form-field #security-challenge-image {
+          width: 5em;
+          height: 5em; }
+          .content .blurbs .blurb .form-field #security-challenge-image img {
+            width: 100%;
+            height: 100%; }
         .content .blurbs .blurb .form-field.save-link {
           margin-top: 2em; }
           .content .blurbs .blurb .form-field.save-link a {
@@ -222,7 +229,7 @@ footer {
       .content .blurbs .blurb {
         padding-bottom: 2em; }
         .content .blurbs .blurb .form-field {
-          width: 23em; }
+          width: 28em; }
           .content .blurbs .blurb .form-field .option-group {
             width: 13.5em; }
           .content .blurbs .blurb .form-field input, .content .blurbs .blurb .form-field textarea {
