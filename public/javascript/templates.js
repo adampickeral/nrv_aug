@@ -21,8 +21,10 @@ var meetings =
   '<div class="blurbs">' +
     '<div class="blurb">' +
       '<h2>Meetings</h2>' +
-      '<p class="blurb-content">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-      '<p class="blurb-content">Our next meeting will be on Tuesday June 11th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
+      '<section>' +
+        '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
+        '<p class="blurb-content">Our next meeting will be on Tuesday June 11th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
+      '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
         '<div class="form-field">' +
@@ -46,6 +48,9 @@ var meetings =
           '<label for="security-challenge-question">What is this a picture of?</label>' +
           '<div id="security-challenge-image"><img src="/images/secure_image_{{ challenge }}.png"></div>' +
           '<input id="security-challenge-question" name="security-challenge-question" type="text">' +
+        '</div>' +
+        '<div class="form-field info-message">' +
+          '<div id="rsvp-message"></div>' +
         '</div>' +
         '<div class="form-field save-link">' +
           '<a class="button" id="rsvp-submit">Submit</a>' +
@@ -140,7 +145,7 @@ var blog =
         '<author>Adam Pickeral</author>' +
         '<date>6/11/13</date>' +
         '<section>' +
-          '<p class="blurb-content">This was our first meeting trying out the <a href="http://leancoffee.org/" class="info-link" target="blank">Lean Coffee</a> format, and I\'d say it went pretty well. Everyone had a lot of interesting topics to discuss, and we had some insightful conversations on the topics we chose to discuss.</p>' +
+          '<p class="first">This was our first meeting trying out the <a href="http://leancoffee.org/" class="info-link" target="blank">Lean Coffee</a> format, and I\'d say it went pretty well. Everyone had a lot of interesting topics to discuss, and we had some insightful conversations on the topics we chose to discuss.</p>' +
         '</section>' +
         '<section>' +
           '<h3>Indoctrinating New Team Members into Agile</h3>' +

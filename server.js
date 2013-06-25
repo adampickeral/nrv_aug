@@ -9,13 +9,19 @@ server.set('title', 'New River Valley Agile Users Group');
 
 server.use(express.static(__dirname + '/public'));
 server.set('views', __dirname + '/views');
+var MemoryStore = express.session.MemoryStore;
+// server.use(express.bodyParser());
+server.use(express.cookieParser());
+server.use(express.session({ 
+key: 'nrvaug',
+secret: 'NRv@ug$3cr3ts!#',
+store: new MemoryStore({ reapInterval: 60000 * 10 }) 
+    }));
 
 // Main route to the app
 server.get('/', function (req, res) {
-  var challenge;
-
-  challenge = Math.floor((Math.random()*3)+1);
-  res.render('index.ejs', {locals: {segmentKey: config.segmentKey, challenge: challenge}});
+  req.session.cq = Math.floor((Math.random()*3)+1);
+  res.render('index.ejs', {locals: {segmentKey: config.segmentKey, challenge: req.session.cq}});
 });
 
 // Confirm mailing list subscription and add user to the list
@@ -83,38 +89,66 @@ server.post('/rsvp', function (req, res) {
     data += chunk;
   });
 
-  req.on ('end', function () {
+  req.on('end', function () {
     var options;
     
     requestBody = qs.parse(data);
-    options = {
-      url: config.sendMessage,
-      auth: {
-        user: config.user,
-        pass: config.key
-      },
-      form: {
-        from: 'donotreply@agilenrv.org',
-        to: requestBody.email,
-        subject: 'AUG Meeting RSVP',
-        text: 'Thanks for RSVP\'ing to the meeting. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
-      }
-    };
 
-    request.post(options, function (error, response, body) {
-      if (response.statusCode < 200 || response.statusCode >= 300) {
-        res.status(response.statusCode).send(body);
-      } else {
-        options.form.from = 'rsvp@agilenrv.org';
-        options.form.to = 'organizers@agilenrv.org';
-        options.form.text = 'RSVP for ' + requestBody.name + ' ' + requestBody.email + ': ' + requestBody.reply;
-        request.post(options, function (err, resp, bod) {
-          res.status(resp.statusCode).send(bod);
-        });
-      }
-    });
+    if (challengeAccepted(req.session.cq, requestBody.picture)) {
+      options = {
+        url: config.sendMessage,
+        auth: {
+          user: config.user,
+          pass: config.key
+        },
+        form: {
+          from: 'donotreply@agilenrv.org',
+          to: requestBody.email,
+          subject: 'AUG Meeting RSVP',
+          text: 'Thanks for RSVP\'ing to the meeting. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
+        }
+      };
+
+      request.post(options, function (error, response, body) {
+        if (response.statusCode < 200 || response.statusCode >= 300) {
+          res.status(response.statusCode).send(body);
+        } else {
+          options.form.from = 'rsvp@agilenrv.org';
+          options.form.to = 'organizers@agilenrv.org';
+          options.form.text = 'RSVP for ' + requestBody.name + ' ' + requestBody.email + ': ' + requestBody.reply;
+          request.post(options, function (err, resp, bod) {
+            res.status(resp.statusCode).send(bod);
+          });
+        }
+      });
+    } else {
+      res.status(403).send('Bad challenge answer');
+    }
   });
 });
+
+function challengeAccepted(cq, answer) {
+  console.log(answer);
+  console.log(cq);
+  switch (cq) {
+    case 1:
+      console.log('case 1');
+      return ['ball', 'basketball', 'basket ball', 'bball'].indexOf(answer) > -1;
+      break;
+    case 2:
+      console.log('case 2');
+      return ['robot'].indexOf(answer) > -1;
+      break;
+    case 3:
+      console.log('case 3');
+      return ['dog', 'doggy', 'puppy', 'wagging dog', 'happy dog', 'happy puppy'].indexOf(answer) > -1;
+      break;
+    default:
+      console.log('case 4');
+      return false;
+      break;
+  }
+}
 
 server.listen(3000);
 console.log('Listening on port 3000');

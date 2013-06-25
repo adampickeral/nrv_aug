@@ -69,7 +69,10 @@ h3 {
       margin-left: 10%;
       margin-right: 10%; }
       .content .blurbs .blurb p {
+        margin-top: 1em;
         margin-bottom: 0.25em; }
+        .content .blurbs .blurb p.first {
+          margin-top: 0; }
       .content .blurbs .blurb h2 {
         margin-bottom: 0.5em;
         font-weight: 400;
@@ -124,10 +127,6 @@ h3 {
         font-style: italic; }
       .content .blurbs .blurb blog section {
         margin-top: 1em; }
-        .content .blurbs .blurb blog section p {
-          margin-top: 1em; }
-          .content .blurbs .blurb blog section p.first {
-            margin-top: 0; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
