@@ -7,7 +7,7 @@ nrvaug.views.Meetings.prototype = new nrvaug.views.View();
 nrvaug.views.Meetings.prototype.render = function () {
   nrvaug.views.View.prototype.render.call(this, arguments);
   this.map_.render();
-  this.rsvpForm_.render($('.form'));
+  this.rsvpForm_.render();
 };
 
 nrvaug.views.Meetings.prototype.getTemplate = function () {

@@ -1,3 +1,4 @@
+var challenge = 2;
 describe('nrvaug.views.Meetings', function () {
   var view, map, rsvpForm;
 
@@ -17,7 +18,7 @@ describe('nrvaug.views.Meetings', function () {
     var content;
 
     content = $(".content")[0];
-    expect(content.innerHTML).toBe(nrvaug.templates.meetingsTmpl());
+    expect(content.innerHTML).toBe(nrvaug.templates.meetingsTmpl({challenge: challenge}));
   });
 
   it('replaces the content with the meetings view if there is content there already', function () {
@@ -28,18 +29,18 @@ describe('nrvaug.views.Meetings', function () {
     view.render();
 
     content = $(".content")[0];
-    expect(content.innerHTML).toBe(nrvaug.templates.meetingsTmpl());
+    expect(content.innerHTML).toBe(nrvaug.templates.meetingsTmpl({challenge: challenge}));
   });
 
   it('renders the map', function () {
     expect(map.render).toHaveBeenCalled();
   });
 
-  it('sets the page name for tracking', function () {
-    expect(view.getPageName()).toBe('Meetings');
+  it('renders the rsvp form', function () {
+    expect(rsvpForm.render).toHaveBeenCalled();
   });
 
-  it('renders the rsvp form', function () {
-    expect(rsvpForm.render).toHaveBeenCalledWith($('.form'));
+  it('sets the page name for tracking', function () {
+    expect(view.getPageName()).toBe('Meetings');
   });
 });

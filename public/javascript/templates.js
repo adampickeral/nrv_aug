@@ -27,6 +27,7 @@ var meetings =
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
+        '<h4>All fields are required</h4>' +
         '<div class="form-field">' +
           '<label for="rsvp-name">Name</label>' +
           '<input id="rsvp-name" type="text">' +
@@ -38,7 +39,7 @@ var meetings =
         '<div class="form-field">' +
           '<label>Attending:</label>' +
           '<div class="option-group">' +
-            '<input id="rsvp-attending-yes" name="rsvp-attending" type="radio" value="yes">' +
+            '<input id="rsvp-attending-yes" name="rsvp-attending" type="radio" value="yes" checked="checked">' +
             '<label for="rsvp-attending-yes">Yes</label>' +
             '<input id="rsvp-attending-no" name="rsvp-attending" type="radio" value="no">' +
             '<label for="rsvp-attending-no">No</label>' +

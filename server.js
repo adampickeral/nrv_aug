@@ -128,25 +128,15 @@ server.post('/rsvp', function (req, res) {
 });
 
 function challengeAccepted(cq, answer) {
-  console.log(answer);
-  console.log(cq);
   switch (cq) {
     case 1:
-      console.log('case 1');
       return ['ball', 'basketball', 'basket ball', 'bball'].indexOf(answer) > -1;
-      break;
     case 2:
-      console.log('case 2');
       return ['robot'].indexOf(answer) > -1;
-      break;
     case 3:
-      console.log('case 3');
       return ['dog', 'doggy', 'puppy', 'wagging dog', 'happy dog', 'happy puppy'].indexOf(answer) > -1;
-      break;
     default:
-      console.log('case 4');
       return false;
-      break;
   }
 }
 
