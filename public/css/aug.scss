@@ -100,7 +100,12 @@ h3 {
       margin-right: 10%;
 
       p {
+        margin-top: 1em;
         margin-bottom: 0.25em;
+
+        &.first {
+          margin-top: 0;
+        }
       }
 
       h2 {
@@ -116,19 +121,65 @@ h3 {
         font-size: .6em;
       }
 
+      .form {
+        padding-top: 2em;
+
+        h4 {
+          font-size: 75%;
+          font-style: italic;
+          color: red;
+        }
+      }
+
       .form-field {
         margin-bottom: 1em;
         width: 100%;
+
+        label {
+          display: block;
+        }
+
         input, textarea {
-          float: right;
           width: 70%;
           line-height: 1.4em;
           margin-top: 0.3em;
           margin-right: 2em;
+
+          &.missing {
+            background-color: rgba(255, 0, 0, 0.25);
+          }
+        }
+
+        .option-group {
+          width: 10.5em;
+
+          label {
+            margin-right: 1em;
+            display: inline;
+          }
+          input {
+            float: none;
+            width: 1em;
+            margin-right: 0.6em
+          }
+        }
+
+        #security-challenge-image {
+          width: 5em;
+          height: 5em;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
 
         &.save-link {
           margin-top: 2em;
+
+          &.loading {
+            display: none;
+          }
 
           a {
             padding-left: 3em;
@@ -143,6 +194,11 @@ h3 {
 
           &.error {
             color: red;
+          }
+          &.loading {
+            background-image: url('/images/loading_icon.gif');
+            background-repeat: no-repeat;
+            height: 3.75em;
           }
         }
       }
@@ -159,14 +215,6 @@ h3 {
 
         section {
           margin-top: 1em;
-
-          p {
-            margin-top: 1em;
-
-            &.first {
-              margin-top: 0;
-            }
-          }
         }
       }
     }
@@ -327,7 +375,12 @@ footer {
         padding-bottom: 2em;
 
         .form-field {
-          width: 23em;
+          width: 28em;
+
+          .option-group {
+            width: 13.5em;
+          }
+
           input, textarea {
             width: 20em;
           }
