@@ -21,6 +21,7 @@
   <script type="text/javascript" src="/javascript/views/view.js"></script>
   <script type="text/javascript" src="/javascript/views/main.js"></script>
   <script type="text/javascript" src="/javascript/views/map.js"></script>
+  <script type="text/javascript" src="/javascript/views/rsvp_form.js"></script>
   <script type="text/javascript" src="/javascript/views/meetings.js"></script>
   <script type="text/javascript" src="/javascript/views/mailing_list.js"></script>
   <script type="text/javascript" src="/javascript/views/resources.js"></script>
@@ -34,7 +35,7 @@
       <h1 class="title">New River Valley Agile Users Group</h1>
     </div>
     <div class="open-area"></div>
-    <div class="announcement"><span>Our next meeting is Tuesday, June 11th! <a href="#meetings">MORE INFO &raquo;</a></span></div>
+    <div class="announcement"><span>Our next meeting is Tuesday, July 9th! <a href="#meetings">MORE INFO &raquo;</a></span></div>
   </header>
   
   <section class="content">
@@ -60,10 +61,12 @@
       </div>
     </div>
   </footer>
+
   <script type="text/javascript">
     var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
     analytics.load('<%= segmentKey %>');
-    (function ($, analytics){
+    var challenge = '<%= challenge %>';
+    (function ($, analytics, challenge){
       var controller;
 
       // $("#size").text($(window).width() + "px");
@@ -73,6 +76,6 @@
 
       controller = new nrvaug.Controller(this);
       controller.init();
-    })(jQuery, analytics);
+    })(jQuery, analytics, challenge);
   </script>
 </body>

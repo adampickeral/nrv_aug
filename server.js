@@ -9,10 +9,19 @@ server.set('title', 'New River Valley Agile Users Group');
 
 server.use(express.static(__dirname + '/public'));
 server.set('views', __dirname + '/views');
+var MemoryStore = express.session.MemoryStore;
+// server.use(express.bodyParser());
+server.use(express.cookieParser());
+server.use(express.session({ 
+key: 'nrvaug',
+secret: 'NRv@ug$3cr3ts!#',
+store: new MemoryStore({ reapInterval: 60000 * 10 }) 
+    }));
 
 // Main route to the app
 server.get('/', function (req, res) {
-  res.render('index.ejs', {locals: {segmentKey: config.segmentKey}});
+  req.session.cq = Math.floor((Math.random()*3)+1);
+  res.render('index.ejs', {locals: {segmentKey: config.segmentKey, challenge: req.session.cq}});
 });
 
 // Confirm mailing list subscription and add user to the list
@@ -70,6 +79,70 @@ server.post('/mailingList', function (req, res) {
     });
   });
 });
+
+// rsvp to meeting; sends confirmation email and email to organizers list
+server.post('/rsvp', function (req, res) {
+  var name, email, reply;
+
+  data = '';
+  req.on('data', function (chunk) {
+    data += chunk;
+  });
+
+  req.on('end', function () {
+    var options;
+    
+    requestBody = qs.parse(data);
+
+    if (challengeAccepted(req.session.cq, requestBody.picture)) {
+      options = {
+        url: config.sendMessage,
+        auth: {
+          user: config.user,
+          pass: config.key
+        },
+        form: {
+          from: 'donotreply@agilenrv.org',
+          to: requestBody.email,
+          subject: 'AUG Meeting RSVP',
+          text: 'Thanks for RSVP\'ing to the meeting on July 9th, 2013, at 6:00pm. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
+        }
+      };
+
+      request.post(options, function (error, response, body) {
+        if (response.statusCode < 200 || response.statusCode >= 300) {
+          res.status(response.statusCode).send(body);
+        } else {
+          options.form.from = 'rsvp@agilenrv.org';
+          options.form.to = 'organizers@agilenrv.org';
+          options.form.subject += ' - ' + requestBody.name;
+          options.form.text = 'RSVP for ' + requestBody.name + ' ' + requestBody.email + ': ' + requestBody.reply;
+          request.post(options, function (err, resp, bod) {
+            res.status(resp.statusCode).send(bod);
+          });
+        }
+      });
+    } else {
+      res.status(403).send('Bad challenge answer');
+    }
+  });
+});
+
+function challengeAccepted(cq, answer) {
+  var lowerCaseAnswer;
+
+  lowerCaseAnswer = answer.toLowerCase();
+  switch (cq) {
+    case 1:
+      return ['ball', 'basketball', 'basket ball', 'bball'].indexOf(lowerCaseAnswer) > -1;
+    case 2:
+      return ['robot'].indexOf(lowerCaseAnswer) > -1;
+    case 3:
+      return ['dog', 'doggy', 'puppy', 'wagging dog', 'happy dog', 'happy puppy'].indexOf(lowerCaseAnswer) > -1;
+    default:
+      return false;
+  }
+}
 
 server.listen(3000);
 console.log('Listening on port 3000');
