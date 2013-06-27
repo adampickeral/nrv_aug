@@ -105,7 +105,7 @@ server.post('/rsvp', function (req, res) {
           from: 'donotreply@agilenrv.org',
           to: requestBody.email,
           subject: 'AUG Meeting RSVP',
-          text: 'Thanks for RSVP\'ing to the meeting. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
+          text: 'Thanks for RSVP\'ing to the meeting on July 9th, 2013, at 6:00pm. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
         }
       };
 
@@ -115,6 +115,7 @@ server.post('/rsvp', function (req, res) {
         } else {
           options.form.from = 'rsvp@agilenrv.org';
           options.form.to = 'organizers@agilenrv.org';
+          options.form.subject += ' - ' + requestBody.name;
           options.form.text = 'RSVP for ' + requestBody.name + ' ' + requestBody.email + ': ' + requestBody.reply;
           request.post(options, function (err, resp, bod) {
             res.status(resp.statusCode).send(bod);
@@ -128,13 +129,16 @@ server.post('/rsvp', function (req, res) {
 });
 
 function challengeAccepted(cq, answer) {
+  var lowerCaseAnswer;
+
+  lowerCaseAnswer = answer.toLowerCase();
   switch (cq) {
     case 1:
-      return ['ball', 'basketball', 'basket ball', 'bball'].indexOf(answer) > -1;
+      return ['ball', 'basketball', 'basket ball', 'bball'].indexOf(lowerCaseAnswer) > -1;
     case 2:
-      return ['robot'].indexOf(answer) > -1;
+      return ['robot'].indexOf(lowerCaseAnswer) > -1;
     case 3:
-      return ['dog', 'doggy', 'puppy', 'wagging dog', 'happy dog', 'happy puppy'].indexOf(answer) > -1;
+      return ['dog', 'doggy', 'puppy', 'wagging dog', 'happy dog', 'happy puppy'].indexOf(lowerCaseAnswer) > -1;
     default:
       return false;
   }

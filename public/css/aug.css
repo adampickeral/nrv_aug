@@ -117,6 +117,8 @@ h3 {
             height: 100%; }
         .content .blurbs .blurb .form-field.save-link {
           margin-top: 2em; }
+          .content .blurbs .blurb .form-field.save-link.loading {
+            display: none; }
           .content .blurbs .blurb .form-field.save-link a {
             padding-left: 3em;
             padding-right: 3em; }
@@ -124,6 +126,10 @@ h3 {
           color: green; }
         .content .blurbs .blurb .form-field.info-message.error {
           color: red; }
+        .content .blurbs .blurb .form-field.info-message.loading {
+          background-image: url("/images/loading_icon.gif");
+          background-repeat: no-repeat;
+          height: 3.75em; }
       .content .blurbs .blurb blog h2 {
         margin-bottom: 0.3em; }
       .content .blurbs .blurb blog date {

@@ -59,6 +59,42 @@ describe('nrvaug.views.RsvpForm', function () {
     expect($('.info-message').attr('class')).not.toContain('error');
   });
 
+  it('adds a loading class to the message and button on request submission', function () {
+    var post;
+
+    post = {
+      done: function (callback) {
+      },
+      fail: function (callback) {}
+    };
+    spyOn($, 'post').andReturn(post);
+
+    $('#rsvp-message').text('hi there');
+    submitForm()
+
+    expect($('.info-message').attr('class')).toContain('loading');
+    expect($('.save-link').attr('class')).toContain('loading');
+    expect($('#rsvp-message')[0].innerHTML).toBe('');
+  });
+
+  it('removes the loading class from the message and button on request submission', function () {
+    var post;
+
+    post = {
+      done: function (callback) {
+        callback();
+        return this;
+      },
+      fail: function (callback) {}
+    };
+    spyOn($, 'post').andReturn(post);
+
+    submitForm()
+
+    expect($('.info-message').attr('class')).not.toContain('loading');
+    expect($('.save-link').attr('class')).not.toContain('loading');
+  });
+
   it('adds a challenge failed message on a 403 response', function () {
     var post;
 

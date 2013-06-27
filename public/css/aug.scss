@@ -177,6 +177,10 @@ h3 {
         &.save-link {
           margin-top: 2em;
 
+          &.loading {
+            display: none;
+          }
+
           a {
             padding-left: 3em;
             padding-right: 3em;
@@ -190,6 +194,11 @@ h3 {
 
           &.error {
             color: red;
+          }
+          &.loading {
+            background-image: url('/images/loading_icon.gif');
+            background-repeat: no-repeat;
+            height: 3.75em;
           }
         }
       }

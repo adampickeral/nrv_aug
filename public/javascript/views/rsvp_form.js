@@ -15,13 +15,20 @@ nrvaug.views.RsvpForm.prototype.handleFormSubmission_ = function () {
       'picture': $('#security-challenge-question').val()
     };
     if (this.isValidInput(data)) {
+      $('#rsvp-message').text('');
+      $('.info-message').addClass('loading');
+      $('.save-link').addClass('loading');
       $.post('rsvp', data)
         .done(function () {
+          $('.info-message').removeClass('loading');
+          $('.save-link').removeClass('loading');
           $('#rsvp-message').text('Thanks for your RSVP');
           $('.info-message').addClass('success');
           $('.info-message').removeClass('error');
         })
         .fail(function (response) {
+          $('.info-message').removeClass('loading');
+          $('.save-link').removeClass('loading');
           if (response.status === 403) {
             $('#rsvp-message').text('That is not what this is a picture of. Try again or refresh the page for a new picture.');
           } else {
