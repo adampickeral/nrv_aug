@@ -23,7 +23,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p class="blurb-content">Our next meeting will be on Tuesday July 9th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
+        '<p class="blurb-content">Our next meeting will be on Tuesday August 13th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. Daniel Markham will be talking with us about "Agile / Scrum, going from 3 to 150. Scaling without bogging down." We\'ll discuss how to work in a really small group, how to scale out to 30 developers, then how to push past 100. We\'ll also hit on technical practices and discuss how they work at various scales.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
