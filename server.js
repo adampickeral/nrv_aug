@@ -2,6 +2,7 @@ var express = require('express');
 var request = require('request');
 var qs = require('querystring');
 var config = require('./config');
+var mongoose = require('mongoose');
 
 var server = express();
 
@@ -13,10 +14,10 @@ var MemoryStore = express.session.MemoryStore;
 // server.use(express.bodyParser());
 server.use(express.cookieParser());
 server.use(express.session({ 
-key: 'nrvaug',
-secret: 'NRv@ug$3cr3ts!#',
-store: new MemoryStore({ reapInterval: 60000 * 10 }) 
-    }));
+  key: 'nrvaug',
+  secret: 'NRv@ug$3cr3ts!#',
+  store: new MemoryStore({ reapInterval: 60000 * 10 }) 
+}));
 
 // Main route to the app
 server.get('/', function (req, res) {
@@ -127,6 +128,56 @@ server.post('/rsvp', function (req, res) {
     }
   });
 });
+
+// comment on a blog post
+server.post('/comment', function (req, res) {
+  var name, comment, db;
+
+  data = '';
+  req.on('data', function (chunk) {
+    data += chunk;
+  });
+
+  req.on('end', function () {
+    var options;
+    
+    requestBody = qs.parse(data);
+
+    if (challengeAccepted(req.session.cq, requestBody.picture)) {
+      db = mongoose.connection;
+
+      if (!db.readyState) {
+        mongoose.connect('mongodb://127.0.0.1:27017/nrvaug');
+        db.once('open', function () {
+          postComment(requestBody, res);
+        });
+      } else {
+        postComment(requestBody, res);
+      }
+    } else {
+      res.status(403).send('Bad challenge answer');
+    }
+  });
+});
+
+function postComment(request, response) {
+  var blog, name, email, comment;
+
+  blog = request.blog;
+  name = request.name;
+  email = request.email;
+  comment = request.comment;
+  Comment.save(
+    {
+      blog: request.blog,
+      name: request.name,
+      email: request.email,
+      comment: request.comment
+    },
+    this.logError_
+  );
+  res.status(202).send('Comment posted');
+}
 
 function challengeAccepted(cq, answer) {
   var lowerCaseAnswer;
