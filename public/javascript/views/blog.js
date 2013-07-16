@@ -9,6 +9,10 @@ nrvaug.views.Blog.prototype.getPageName = function () {
   return 'Blog';
 };
 
+nrvaug.views.Blog.prototype.getNavigationItem = function () {
+	return 'nav-blog';
+};
+
 nrvaug.views.createBlogView = function () {
   return new nrvaug.views.Blog();
 };

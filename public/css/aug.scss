@@ -24,6 +24,10 @@ body {
     cursor: hand;
     cursor: pointer;
   }
+
+  &.nav-selected {
+    background-color: #005c82;
+  }
 }
 
 #size {
@@ -105,6 +109,19 @@ h3 {
 
         &.first {
           margin-top: 0;
+        }
+
+        &.meeting-description {
+          margin: 0.5em auto 0;
+          width: 90%;
+          font-size: 90%;
+          font-weight: 400;
+
+          &.speaker-info {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 80%;
+          }
         }
       }
 

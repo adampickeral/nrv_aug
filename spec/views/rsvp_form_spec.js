@@ -52,7 +52,7 @@ describe('nrvaug.views.RsvpForm', function () {
     };
     spyOn($, 'post').andReturn(post);
 
-    submitForm()
+    submitForm();
 
     expect($('#rsvp-message')[0].innerHTML).toBe('Thanks for your RSVP');
     expect($('.info-message').attr('class')).toContain('success');
@@ -64,13 +64,14 @@ describe('nrvaug.views.RsvpForm', function () {
 
     post = {
       done: function (callback) {
+        return this;
       },
       fail: function (callback) {}
     };
     spyOn($, 'post').andReturn(post);
 
     $('#rsvp-message').text('hi there');
-    submitForm()
+    submitForm();
 
     expect($('.info-message').attr('class')).toContain('loading');
     expect($('.save-link').attr('class')).toContain('loading');

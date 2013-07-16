@@ -11,6 +11,10 @@ nrvaug.views.Main.prototype.getPageName = function () {
   return 'Main';
 };
 
+nrvaug.views.Main.prototype.getNavigationItem = function () {
+	return 'nav-main';
+};
+
 nrvaug.views.createMainView = function () {
   return new nrvaug.views.Main();
 };

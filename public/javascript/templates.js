@@ -23,7 +23,12 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p class="blurb-content">Our next meeting will be on Tuesday August 13th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. Daniel Markham will be talking with us about "Agile / Scrum, going from 3 to 150. Scaling without bogging down." We\'ll discuss how to work in a really small group, how to scale out to 30 developers, then how to push past 100. We\'ll also hit on technical practices and discuss how they work at various scales.</p>' +
+        '<p>Our next meeting will be on Tuesday August 13th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. Daniel Markham will be talking with us about working in agile teams both small and large:</p>' +
+        '<p class="meeting-description">Wondering about how to apply the agile practices to your very small team? Why things aren\'t working as you grow? How to work in teams of teams where development involves scores of people?</p>' +
+        '<p class="meeting-description">"Agile: Scaling up without bogging down" is an overview of how the agile practices work in the real world at various scales. Using examples, stories, and diagrams, you\'ll learn how the pieces fit together -- and can scale both up and down -- depending on your unique situation.</p>' +
+        '<p class="meeting-description">Agile practices covered will include: TDD, Pair-Programming, Co-location, Continuous Integration, System Architecture, Daily Scrums, Release Planning, backlogs, and sustainable pace.</p>' +
+        '<p class="meeting-description speaker-info">Daniel Markham is a hands-on technologist with over 20 years experience in programming, teaming, coaching, and setting up coaching groups across the country. His clients include Charles Schwab, Pitney Bowes, State Farm, Ford Motor Company, Blue Cross and Blue Shield, and the Department of Defense, among others. He\'s written "ScrumMaster", an aide to help new ScrumMasters get started, and the ScrumMaster companion video, which is a series of whiteboard chats on things as diverse as preparing for an Agile Adoption or setting up a team room. He lives in South-Central Virginia.</p>' +
+        '<p class="meeting-description speaker-info">This is a joint meeting between the NRVAUG and the RBTC Software Development Forum.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
