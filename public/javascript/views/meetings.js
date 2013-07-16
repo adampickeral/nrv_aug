@@ -18,6 +18,10 @@ nrvaug.views.Meetings.prototype.getPageName = function () {
   return 'Meetings';
 };
 
+nrvaug.views.Meetings.prototype.getNavigationItem = function () {
+	return 'nav-meetings';
+};
+
 nrvaug.views.Meetings.prototype.map_ = null;
 nrvaug.views.Meetings.prototype.rsvpForm_ = null;
 

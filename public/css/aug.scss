@@ -24,6 +24,10 @@ body {
     cursor: hand;
     cursor: pointer;
   }
+
+  &.nav-selected {
+    background-color: #005c82;
+  }
 }
 
 #size {
@@ -116,6 +120,7 @@ h3 {
           &.speaker-info {
             font-style: italic;
             font-weight: 300;
+            font-size: 80%;
           }
         }
       }
