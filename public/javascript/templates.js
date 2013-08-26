@@ -154,7 +154,7 @@ var blog =
         '</section>' +
         '<section>' +
           '<h3>Planning / Releasing</h3>' +
-          '<p class="first">Working in sprints and doing sprint planning works well with small teams and even up to teams of 15. It\’s easy to coordinate planning and releases with a small number of people involved. Sprints start to fail, however, as the team size increases towards 50. As the time grows kanban becomes a necessity to facilitate planning and releases. The shear volume of work that needs to be coordinated for planning and releases in large teams lends itself to the just in time nature of kanban. By focusing on only what\’s currently in progress and the next few things coming up, teams can reduce the overhead of planning and are better equipped to adapt to the inevitable changes that will happen in large-scale projects.</p>' +
+          '<p class="first">Working in sprints and doing sprint planning works well with small teams and even up to teams of 15. It\’s easy to coordinate planning and releases with a small number of people involved. Sprints start to fail, however, as the team size increases towards 50. As the size of the team grows kanban becomes a necessity to facilitate planning and releases. The shear volume of work that needs to be coordinated for planning and releases in large teams lends itself to the just in time nature of kanban. By focusing on only what\’s currently in progress and the next few things coming up, teams can reduce the overhead of planning and are better equipped to adapt to the inevitable changes that will happen in large-scale projects.</p>' +
         '</section>' +
         '<section>' +
           '<h3>Standups</h3>' +
@@ -162,7 +162,7 @@ var blog =
         '</section>' +
         '<section>' +
           '<h3>Communication</h3>' +
-          '<p class="first">A goal Daniel establishes for his teams, both small and large, is to have zero meetings. If you\’re having to schedule a meeting, then communication is failing somewhere else. This isn\’t a goal to adhere to strictly, rather it\’s an ideal to strive for. Much like setting a goal of having 100% test coverage, it\’s something you want to attain but realize you may never get there. Nonetheless you strive for that goal because that is the ideal state. It may not be possible to have zero meetings, especially on larger teams, and even more so on teams that are non-collocated, but if you find your days filled with meetings, you should look at your team and process setup to see where communication failing. This could be an indicator of poor collaboration within the team as well.</p>' +
+          '<p class="first">A goal Daniel establishes for his teams, both small and large, is to have zero meetings. If you\’re having to schedule a meeting, then communication is failing somewhere else. This isn\’t a goal to adhere to strictly, rather it\’s an ideal to strive for. Much like setting a goal of having 100% test coverage, it\’s something you want to attain but realize you may never get there. Nonetheless you strive for that goal because that is the ideal state. It may not be possible to have zero meetings, especially on larger teams, and even more so on teams that are non-collocated, but if you find your days filled with meetings, you should look at your team and process to see where communication is failing. This could be an indicator of poor collaboration within the team as well.</p>' +
         '</section>' +
       '</blog>' +
     '</div>' +
