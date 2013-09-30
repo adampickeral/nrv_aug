@@ -23,7 +23,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday September 10th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
+        '<p>Our next meeting will be on Tuesday October 8th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
@@ -140,6 +140,27 @@ var resources =
 
 var blog = 
   '<div class="blurbs">' +
+    '<div class="blurb">' +
+      '<blog>' +
+        '<h2>September Meeting</h2>' +
+        '<author>Adam Pickeral</author>' +
+        '<date>9/10/13</date>' +
+        '<section>' +
+          '<p class="first">We had another great turnout for this month\’s meeting (with several new faces). It\’s very exciting getting to hear so many different perspectives on agile, as well as the different problems that teams are facing. You really start to see just how different the processes of every team, company, and even teams within a company really are when you talk to more people. And that\’s the beauty of agile; you don\’t just follow a process blindly, you do what works for your team. On to the topics…</p>' +
+        '</section>' +
+        '<section>' +
+          '<h3>Self-Organizing Teams: Fact or Fiction</h3>' +
+          '<p class="first">This topic was approached from two different angles: 1) How do you coach your teams to be self-organizing? 2) How do you take self-organizing teams to the next level?</p>' +
+          '<p>The best way to create self-organizing teams is to not make any decisions for them! Teams are going to make the wrong decision from time to time and that\’s ok, it\’s even a good thing. Failures are opportunities for learning and improvement, and teams are never going to learn how to make the right decisions for themselves if they\’re never allowed to make the wrong decisions for themselves. In agile we reduce the impact of failure through short feedback cycles. From 1 second unit tests to 1 week iterations, the time that a failure lives is small enough that the impact won\’t be large, but is large enough that lessons can be learned and better decisions can be made.</p>' +
+          '<p>Teams can also become more self-organizing by rotating responsibilities. The scrum master or agile coach shouldn\’t be the one who is always leading stand-ups and retrospectives. Once your team understands the benefits of these types of meetings, let them take the meetings over. Rotate the facilitator of the meeting so that there is a different person running it each time. This method will also help your teams get to the next level. When a team is truly self-organizing, they\’ll be able to look beyond the day to day and begin taking ownership of larger concepts such as roadmap and personnel decisions.</p>' +
+        '</section>' +
+        '<section>' +
+          '<h3>When to do Automated UI Testing</h3>' +
+          '<p class="first">Automated UI testing is a divisive topic in the community. Some are strongly opposed to heavy Automated UI (or Automated Acceptance) testing, and others are strongly for it. It really just depends on your project, process, and current testing situation. James shore <a href="http://www.jamesshore.com/Blog/Alternatives-to-Acceptance-Testing.html" class="info-link" target="_blank">argues</a> that there isn\’t a strong need for automated acceptance testing if you are diligent in your process and have the right tests at lower levels of testing (integration, unit, etc). Bob Martin (Uncle Bob) <a href="http://blog.8thlight.com/uncle-bob/2013/09/26/AT-FAIL.html" class="info-link" target="_blank">argues</a> for automated acceptance testing, and that those who argue against are missing the point of these types of tests.</p>' +
+          '<p>Some form of automated acceptance testing should be required, because this is the only way your system is tested end-to-end in an automated manner. How much testing is required at this level again depends on your process and how much testing is being done at the lower levels. The earlier you start doing automated acceptance tests the better, because similar to doing TDD with unit tests, they help drive the design of your system. Not only that, but if business people can help define or even write these tests, then the passing tests let developers know that the stories are finished.</p>' +
+        '</section>' +
+      '</blog>' +
+    '</div>' +
     '<div class="blurb">' +
       '<blog>' +
         '<h2>August Meeting</h2>' +
