@@ -164,7 +164,7 @@ var blog =
       '<p class="read-more"></p>' +
     '</div>' +
     '<a class="info-link" id="november-read-more">read more...</a>' +
-    '<div class="blurb">' +
+    '<div id="september-content" class="blurb sidebar-box">' +
       '<blog>' +
         '<h2>September Meeting</h2>' +
         '<author>Adam Pickeral</author>' +
@@ -184,8 +184,10 @@ var blog =
           '<p>Some form of automated acceptance testing should be required, because this is the only way your system is tested end-to-end in an automated manner. How much testing is required at this level again depends on your process and how much testing is being done at the lower levels. The earlier you start doing automated acceptance tests the better, because similar to doing TDD with unit tests, they help drive the design of your system. Not only that, but if business people can help define or even write these tests, then the passing tests let developers know that the stories are finished.</p>' +
         '</section>' +
       '</blog>' +
+      '<p class="read-more"></p>' +
     '</div>' +
-    '<div class="blurb">' +
+    '<a class="info-link" id="september-read-more">read more...</a>' +
+    '<div id="august-content" class="blurb sidebar-box">' +
       '<blog>' +
         '<h2>August Meeting</h2>' +
         '<author>Adam Pickeral</author>' +
@@ -210,8 +212,10 @@ var blog =
           '<p class="first">A goal Daniel establishes for his teams, both small and large, is to have zero meetings. If you\’re having to schedule a meeting, then communication is failing somewhere else. This isn\’t a goal to adhere to strictly, rather it\’s an ideal to strive for. Much like setting a goal of having 100% test coverage, it\’s something you want to attain but realize you may never get there. Nonetheless you strive for that goal because that is the ideal state. It may not be possible to have zero meetings, especially on larger teams, and even more so on teams that are non-collocated, but if you find your days filled with meetings, you should look at your team and process to see where communication is failing. This could be an indicator of poor collaboration within the team as well.</p>' +
         '</section>' +
       '</blog>' +
+      '<p class="read-more"></p>' +
     '</div>' +
-    '<div class="blurb">' +
+    '<a class="info-link" id="august-read-more">read more...</a>' +
+    '<div id="july-content" class="blurb sidebar-box">' +
       '<blog>' +
         '<h2>July Meeting</h2>' +
         '<author>Adam Pickeral</author>' +
@@ -237,8 +241,10 @@ var blog =
           '<p class="first">Hard deadlines are often present in software development, and what that usually means is that someone wants everything to be done by a certain date. Agile planning works around the assumption that we can only go as fast as we can go. Sure we can change things in our process along the way to help us work faster, but things are also going to happen that slow us down. That\’s why an agile plan is a living plan, it is not set in stone. When working with a hard deadline, it\’s important to establish what the minimum viable product (MVP) is. Once you have the MVP established, that functionality becomes the highest priority for the team, and you work towards completing that. If there\’s time left after the MVP is complete, then you can work on polishing up and enhancing the functionality. The MVP can also change, and that\’s why it\’s critical to always look at the plan and adjust it accordingly. These adjustments take place in sprint plannings, retrospectives, standups, even in day-today work as problems arise or work is completed ahead of time. Be transparent in your progress so the team has the ability and information necessary to make the best decisions they can on what is the most important thing to be working on right now. There are three aspects to planning a project, and they are scope, time, and budget (price of development, funds available, etc). You get to fix two of these things, and with a hard deadline time is going to be fixed, and the budget is usually also fixed (event if it isn\’t, throwing people at the problem or working insane hours won\’t work anyways). These leaves you with one thing that is flexible, and that is scope. So decide what\’s most important, and do that first.</p>' +
         '</section>' +
       '</blog>' +
+      '<p class="read-more"></p>' +
     '</div>' +
-    '<div class="blurb">' +
+    '<a class="info-link" id="july-read-more">read more...</a>' +
+    '<div id="june-content" class="blurb sidebar-box">' +
       '<blog>' +
         '<h2>June Meeting</h2>' +
         '<author>Adam Pickeral</author>' +
@@ -270,7 +276,9 @@ var blog =
           '<p>Sometimes these spikes are large and can\'t be contained within a small timebox. This is really a symptom of a spike that is too vague. Just like a user story, a spike needs to have acceptance criteria, or some measurable goals that team members can check off so they know when they are done with a spike. Spikes can also be broken down into smaller spikes. If the scope of a spike will take longer than two days to investigate, split it into smaller spikes that make sense. Remember that we work in small increments, and this applies to almost everything we do, including research.</p>' +
         '</section>' +
       '</blog>' +
+      '<p class="read-more"></p>' +
     '</div>' +
+    '<a class="info-link" id="june-read-more">read more...</a>' +
   '</div>';
 
 nrvaug.templates.mainTmpl = Mustache.compile(main);

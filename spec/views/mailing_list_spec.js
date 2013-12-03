@@ -27,7 +27,7 @@ describe('nrvaug.views.MailingList', function () {
   });
 
   it('sets focus on the name input', function () {
-    var mailingListName;
+    var mailingListName, focus;
 
     focus = spyOn($.prototype, 'focus');
 
