@@ -140,13 +140,15 @@ var resources =
 
 var blog = 
   '<div class="blurbs">' +
-    '<div class="blurb">' +
+    '<div id="november-content" class="blurb sidebar-box">' +
       '<blog>' +
         '<h2>November Meeting</h2>' +
         '<author>Adam Pickeral</author>' +
         '<date>11/12/13</date>' +
         '<section>' +
           '<p class="first">Our first meeting in Roanoke turned out to be a great success with about 12 attendees. Thanks again to <a class="info-link" href="http://www.interactiveachievement.com/" target="_blank">Interactive Achievement</a> for providing both the location and food! We discussed distributed version control using git, the Kano Model, and automated testing for continuous delivery.</p>' +
+        '</section>' +
+        '<section>' +
           '<p>For distributed version control, one of our group members presented their own unique way of using git which involves a number of personal public and private repositories off of the main repository. The personal repositories are designed to keep the main repo clean and free of commits that would pollute the history. Their method also allows for one (or more) gatekeepers of the main repo. While I think what they were trying to achieve could be done in a simpler manner, it was nonetheless a novel solution, and if it works, it works!</p>' +
         '</section>' +
         '<section>' +
@@ -159,7 +161,9 @@ var blog =
           '<p>But it can take a while to build a safety net, both in terms of test coverage and the process by which the tests are built. By process I mean who writes the tests, what types of tests there are, and who is responsible for quality. In agile we don\’t have a separate “quality” team. There\’s a change in mindset that has to happen to get to continuous delivery, which is that everyone owns the quality of the product. Everyone tests. So when QA is a bottleneck, the first change in the process isn\’t to start writing automated tests. The first step isn\’t even writing unit tests. The first change is to have developers own the QA role by running the manual tests themselves. Make them feel the pain of manually running through a regression test plan after every change. This is where real change will start to happen. Then it will be up to the team to decide what the next step will be in getting to continuous delivery, whether it\’s automated acceptance tests, or even unit tests.</p>' +
         '</section>' +
       '</blog>' +
+      '<p class="read-more"></p>' +
     '</div>' +
+    '<a class="info-link" id="november-read-more">read more...</a>' +
     '<div class="blurb">' +
       '<blog>' +
         '<h2>September Meeting</h2>' +
