@@ -147,8 +147,6 @@ var blog =
         '<date>11/12/13</date>' +
         '<section>' +
           '<p class="first">Our first meeting in Roanoke turned out to be a great success with about 12 attendees. Thanks again to <a class="info-link" href="http://www.interactiveachievement.com/" target="_blank">Interactive Achievement</a> for providing both the location and food! We discussed distributed version control using git, the Kano Model, and automated testing for continuous delivery.</p>' +
-        '</section>' +
-        '<section>' +
           '<p>For distributed version control, one of our group members presented their own unique way of using git which involves a number of personal public and private repositories off of the main repository. The personal repositories are designed to keep the main repo clean and free of commits that would pollute the history. Their method also allows for one (or more) gatekeepers of the main repo. While I think what they were trying to achieve could be done in a simpler manner, it was nonetheless a novel solution, and if it works, it works!</p>' +
         '</section>' +
         '<section>' +

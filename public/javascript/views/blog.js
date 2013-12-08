@@ -41,7 +41,7 @@ nrvaug.views.Blog.prototype.readMore_ = function (contentId) {
       'max-height': 9999
     })
     .animate({
-      'height': totalHeight + ($readMoreBlur.outerHeight() * 1.5)
+      'height': totalHeight
     });
     // 1.5 is a magic number to make the height big enough to see all of the text
     $readMoreBlur.hide();
