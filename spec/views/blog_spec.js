@@ -36,6 +36,7 @@ describe('nrvaug.views.Blog', function () {
       spyOn($.prototype, 'animate').andCallThrough();
       spyOn($.prototype, 'show').andCallThrough();
       spyOn($.prototype, 'hide').andCallThrough();
+      spyOn($.prototype, 'text').andCallThrough();
     });
 
     function expectToBeContracted(contentId, readMoreId) {
@@ -57,6 +58,7 @@ describe('nrvaug.views.Blog', function () {
         'max-height': 345
       });
       expect($readMoreBlur.show).toHaveBeenCalled();
+      expect($readMore.text).toHaveBeenCalledWith('read more...');
     }
 
     function expectToBeExpanded(contentId, readMoreId) {
@@ -81,6 +83,7 @@ describe('nrvaug.views.Blog', function () {
         'height': blogHeight + $readMoreBlur.outerHeight()
       });
       expect($readMoreBlur.hide).toHaveBeenCalled();
+      expect($readMore.text).toHaveBeenCalledWith('read less...');
     }
 
     function expectReadMoreToggle(contentId, readMoreId) {

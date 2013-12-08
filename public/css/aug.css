@@ -302,3 +302,7 @@ footer {
   background-image: -moz-linear-gradient(top, rgba(252, 252, 252, 0), #fcfcfc);
   background-image: -ms-linear-gradient(top, rgba(252, 252, 252, 0), #fcfcfc);
   background-image: -o-linear-gradient(top, rgba(252, 252, 252, 0), #fcfcfc); }
+
+.read-more-link {
+  cursor: hand;
+  cursor: pointer; }

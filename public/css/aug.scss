@@ -472,3 +472,8 @@ footer {
   background-image: -ms-linear-gradient(top, $transparent, $light-background);
   background-image: -o-linear-gradient(top, $transparent, $light-background);
 }
+
+.read-more-link {
+  cursor: hand;
+  cursor: pointer;
+}
