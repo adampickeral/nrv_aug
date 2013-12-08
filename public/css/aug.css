@@ -71,10 +71,10 @@ h3 {
       margin-left: 10%;
       margin-right: 10%; }
       .content .blurbs .blurb p {
-        margin-top: 1em;
-        margin-bottom: 0.25em; }
+        padding-top: 1em;
+        padding-bottom: 0.25em; }
         .content .blurbs .blurb p.first {
-          margin-top: 0; }
+          padding-top: 0; }
         .content .blurbs .blurb p.meeting-description {
           margin: 0.5em auto 0;
           width: 90%;
@@ -85,7 +85,7 @@ h3 {
             font-weight: 300;
             font-size: 80%; }
       .content .blurbs .blurb h2 {
-        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
         font-weight: 400;
         font-size: 1.3em;
         color: #01406c; }
@@ -142,12 +142,12 @@ h3 {
           background-repeat: no-repeat;
           height: 3.75em; }
       .content .blurbs .blurb blog h2 {
-        margin-bottom: 0.3em; }
+        padding-bottom: 0.3em; }
       .content .blurbs .blurb blog date {
         font-weight: 400;
         font-style: italic; }
       .content .blurbs .blurb blog section {
-        margin-top: 1em; }
+        padding-top: 1em; }
     .content .blurbs ul {
       color: #01406c;
       padding-left: 1em;
@@ -274,5 +274,35 @@ footer {
 
   .content .blurbs {
     min-height: 17em; } }
+/*------------------
+  goog maps styles
+-------------------*/
 .gm-style-iw {
   line-height: 14px; }
+
+/*-------------------
+  read more styles
+--------------------*/
+.sidebar-box {
+  max-height: 345px;
+  position: relative;
+  overflow: hidden; }
+
+.sidebar-box .read-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 !important;
+  padding: 30px 0 !important;
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(252, 252, 252, 0)), color-stop(1, #fcfcfc));
+  background-image: -webkit-linear-gradient(top, rgba(252, 252, 252, 0), #fcfcfc);
+  background-image: -moz-linear-gradient(top, rgba(252, 252, 252, 0), #fcfcfc);
+  background-image: -ms-linear-gradient(top, rgba(252, 252, 252, 0), #fcfcfc);
+  background-image: -o-linear-gradient(top, rgba(252, 252, 252, 0), #fcfcfc); }
+
+.read-more-link {
+  cursor: hand;
+  cursor: pointer; }
