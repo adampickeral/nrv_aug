@@ -3,17 +3,10 @@ nrvaug.templates = {};
 var main = 
   '<div class="blurbs">' +
     '<div class="blurb">' +
-      '<h2>Our Mission</h2>' +
-      '<p>Encourage better software development through agile practices.</p>' +
-    '</div>' +
-    '<div class="blurb">' +
-      '<h2>Principles</h2>' +
-      '<ul>' +
-        '<li class="icon-right-dir"><b>Discussions are open to all things agile</b></li>' +
-        '<li class="icon-right-dir"><b>Allow the group to determine discussion topics</b></li>' +
-        '<li class="icon-right-dir"><b>Include people from all aspects of software development</b></li>' +
-        '<li class="icon-right-dir"><b>Meet on a monthly basis</b></li>' +
-      '</ul>' +
+      '<h2>What We Do</h2>' +
+      '<section>' +
+        '<p class="first">The New River Valley Agile Users Group brings together individuals from all levels of involvement in software development. We discuss all things agile from software craftsmanship to continuous delivery, and project management to agile coaching. The topics of the meetings are driven by the attendees, where each person brainstorms topics they\'d like to discuss, and the group votes on the ones they find most interesting.</p>' +
+      '</section>' +
     '</div>' +
   '</div>';
 
