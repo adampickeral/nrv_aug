@@ -3,17 +3,10 @@ nrvaug.templates = {};
 var main = 
   '<div class="blurbs">' +
     '<div class="blurb">' +
-      '<h2>Our Mission</h2>' +
-      '<p>Encourage better software development through agile practices.</p>' +
-    '</div>' +
-    '<div class="blurb">' +
-      '<h2>Principles</h2>' +
-      '<ul>' +
-        '<li class="icon-right-dir"><b>Discussions are open to all things agile</b></li>' +
-        '<li class="icon-right-dir"><b>Allow the group to determine discussion topics</b></li>' +
-        '<li class="icon-right-dir"><b>Include people from all aspects of software development</b></li>' +
-        '<li class="icon-right-dir"><b>Meet on a monthly basis</b></li>' +
-      '</ul>' +
+      '<h2>What We Do</h2>' +
+      '<section>' +
+        '<p class="first">The New River Valley Agile Users Group brings together individuals from all levels of involvement in software development. We discuss all things agile from software craftsmanship to continuous delivery, and project management to agile coaching. The topics of the meetings are driven by the attendees, where each person brainstorms topics they\'d like to discuss, and the group votes on the ones they find most interesting.</p>' +
+      '</section>' +
     '</div>' +
   '</div>';
 
@@ -23,6 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
+        '<p>Our next meeting will be on Tuesday February 11th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
