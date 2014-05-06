@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday April 8th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.netventurescorporation.com/" target="blank">NetVentures</a> in Roanoke, located at the corner of 1st and Walnut at <a class="info-link" href="https://maps.google.com/maps?ie=UTF-8&q=NetVentures&fb=1&gl=us&hq=netventures&cid=719563534673977382&ei=gCU5U5-QEuvmsAS2koKgAQ&ved=0CIQBEPwSMAw" target="blank">1143 1st St SW #100 Roanoke, VA</a>. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
+        '<p>Our next meeting will be on Tuesday May 13th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
@@ -50,6 +50,9 @@ var meetings =
           '<a class="button" id="rsvp-submit">Submit</a>' +
         '</div>' +
       '</div>' +
+    '</div>' +
+    '<div class="blurb">' +
+      '<div id="map-canvas"></div>' +
     '</div>' +
   '</div>';
 
