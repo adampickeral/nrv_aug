@@ -32,6 +32,10 @@ describe('nrvaug.views.Meetings', function () {
     expect(content.innerHTML).toBe(nrvaug.templates.meetingsTmpl({challenge: challenge}));
   });
 
+  it('renders the map', function () {
+    expect(map.render).toHaveBeenCalled();
+  });
+
   it('renders the rsvp form', function () {
     expect(rsvpForm.render).toHaveBeenCalled();
   });
