@@ -105,11 +105,15 @@ server.post('/rsvp', function (req, res) {
           from: 'donotreply@agilenrv.org',
           to: requestBody.email,
           subject: 'AUG Meeting RSVP',
-          text: 'Thanks for RSVP\'ing to the meeting on Tuesday May 13th, 2014, at 6:00pm. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
+          text: 'Thanks for RSVP\'ing to the meeting on Tuesday June 10th, 2014, at 6:00pm. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
         }
       };
 
       request.post(options, function (error, response, body) {
+        if (error) {
+          res.status(400).send('There was an error processing the request. Please try again.');
+          return;
+        }
         if (response.statusCode < 200 || response.statusCode >= 300) {
           res.status(response.statusCode).send(body);
         } else {
