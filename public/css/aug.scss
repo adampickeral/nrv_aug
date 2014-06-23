@@ -323,6 +323,14 @@ footer {
         i {
           margin-left: 0.5em;
         }
+
+        &.contact-us {
+          &:hover {
+            cursor: default;
+            background-color: $light-blue;
+            color: $light-background;
+          }
+        }
       }
     }
   }
