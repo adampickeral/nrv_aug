@@ -1,6 +1,6 @@
 body {
   background-color: #01406c;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 1.5em;
   height: 100%;
@@ -202,6 +202,10 @@ footer {
         width: 100%; }
         footer .footer-info .footer-unit .button i {
           margin-left: 0.5em; }
+        footer .footer-info .footer-unit .button.contact-us:hover {
+          cursor: default;
+          background-color: #0087be;
+          color: #fcfcfc; }
 
 @media screen and (min-width: 480px) {
   .title-section {
@@ -269,7 +273,7 @@ footer {
       height: 6.3em; }
     .title-section .announcement {
       margin-top: -4.6em;
-      border: solid #ff5c00;
+      border: solid #FF5C00;
       width: 60%; }
 
   .content .blurbs {
