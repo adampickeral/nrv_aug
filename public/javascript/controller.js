@@ -12,15 +12,15 @@ nrvaug.Controller.prototype.route = function () {
 
   hash = this.getLocationHash_();
   if (hash === "main") {
-    view = nrvaug.views.createMainView();
+    view = nrvaug.views.createMainView(true);
   } else if (hash === "meetings") {
-    view = nrvaug.views.createMeetingsView();
+    view = nrvaug.views.createMeetingsView(true);
   } else if (hash === "mailingList") {
-    view = nrvaug.views.createMailingListView();
+    view = nrvaug.views.createMailingListView(true);
   } else if (hash === "resources") {
-    view = nrvaug.views.createResourcesView();
+    view = nrvaug.views.createResourcesView(true);
   } else if (hash === "blog") {
-    view = nrvaug.views.createBlogView();
+    view = nrvaug.views.createBlogView(true);
   } else {
     view = nrvaug.views.createMainView();
   }

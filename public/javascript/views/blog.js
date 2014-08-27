@@ -1,4 +1,6 @@
-nrvaug.views.Blog = function () {};
+nrvaug.views.Blog = function (scrollIntoView) {
+  nrvaug.views.View.call(this, scrollIntoView);
+};
 nrvaug.views.Blog.prototype = new nrvaug.views.View();
 
 nrvaug.views.Blog.prototype.render = function () {
@@ -63,6 +65,6 @@ nrvaug.views.Blog.prototype.getNavigationItem = function () {
 	return 'nav-blog';
 };
 
-nrvaug.views.createBlogView = function () {
-  return new nrvaug.views.Blog();
+nrvaug.views.createBlogView = function (scrollIntoView) {
+  return new nrvaug.views.Blog(scrollIntoView);
 };
