@@ -12,7 +12,7 @@ nrvaug.views.Map.prototype.render = function () {
   this.map_ = nrvaug.views.Map.createGoogleMap($('#map-canvas')[0], mapOptions)
   geocoder = nrvaug.views.Map.createGoogleGeocoder();
   geocoder.geocode(
-    {'address': '432 North Main St # 200, Blacksburg, VA 24060'},
+    {'address': '1691 Innovation Drive, Blacksburg, VA 24060'},
     this.setLocation.bind(this)
   );
 };
@@ -25,10 +25,10 @@ nrvaug.views.Map.prototype.setLocation = function (results, status) {
     marker = nrvaug.views.Map.createGoogleMapMarker({
       map: this.map_,
       position: results[0].geometry.location,
-      title:"TechPad"
+      title:"Rackspace"
     });
     infoWindow = nrvaug.views.Map.createGoogleInfoWindow(
-      "<p>TechPad</p><p>Above PK's Restaurant:</p><p>432 North Main Street, Suite 200</p><p>Blacksburg, Virginia 24060</p>"
+      "<p>Rackspace</p><p>1691 Innovation Drive, Suite 1000</p><p>Blacksburg, Virginia 24060</p>"
     );
     google.maps.event.addListener(marker, 'click', function() {
       infoWindow.open(this.map_, marker);
