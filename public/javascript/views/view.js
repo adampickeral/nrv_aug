@@ -1,5 +1,5 @@
-nrvaug.views.View = function () {
-
+nrvaug.views.View = function (scrollIntoView) {
+  this.scrollIntoView = scrollIntoView || false;
 };
 
 nrvaug.views.View.prototype.render = function () {
@@ -13,6 +13,7 @@ nrvaug.views.View.prototype.render = function () {
   }
   this.setNavigation_();
   analytics.track(this.getPageName());
+  $('.content')[0].scrollIntoView(this.scrollIntoView);
 };
 
 nrvaug.views.View.prototype.setNavigation_ = function () {

@@ -1,5 +1,5 @@
-nrvaug.views.Main = function () {
-
+nrvaug.views.Main = function (scrollIntoView) {
+  nrvaug.views.View.call(this, scrollIntoView);
 };
 nrvaug.views.Main.prototype = new nrvaug.views.View();
 
@@ -15,6 +15,6 @@ nrvaug.views.Main.prototype.getNavigationItem = function () {
 	return 'nav-main';
 };
 
-nrvaug.views.createMainView = function () {
-  return new nrvaug.views.Main();
+nrvaug.views.createMainView = function (scrollIntoView) {
+  return new nrvaug.views.Main(scrollIntoView);
 };

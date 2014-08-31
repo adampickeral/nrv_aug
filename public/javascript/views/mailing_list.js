@@ -1,5 +1,5 @@
-nrvaug.views.MailingList = function () {
-
+nrvaug.views.MailingList = function (scrollIntoView) {
+  nrvaug.views.View.call(this, scrollIntoView);
 };
 nrvaug.views.MailingList.prototype = new nrvaug.views.View();
 
@@ -39,6 +39,6 @@ nrvaug.views.MailingList.prototype.getPageName = function () {
   return 'Mailing List';
 };
 
-nrvaug.views.createMailingListView = function () {
-  return new nrvaug.views.MailingList();
+nrvaug.views.createMailingListView = function (scrollIntoView) {
+  return new nrvaug.views.MailingList(scrollIntoView);
 };

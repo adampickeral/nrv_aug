@@ -1,4 +1,5 @@
-nrvaug.views.Meetings = function (optMap, optRsvpForm) {
+nrvaug.views.Meetings = function (scrollIntoView, optMap, optRsvpForm) {
+  nrvaug.views.View.call(this, scrollIntoView);
   this.map_ = optMap || new nrvaug.views.Map();
   this.rsvpForm_ = optRsvpForm || new nrvaug.views.RsvpForm();
 };
@@ -25,6 +26,6 @@ nrvaug.views.Meetings.prototype.getNavigationItem = function () {
 nrvaug.views.Meetings.prototype.map_ = null;
 nrvaug.views.Meetings.prototype.rsvpForm_ = null;
 
-nrvaug.views.createMeetingsView = function (optMap, optRsvpForm) {
-  return new nrvaug.views.Meetings(optMap, optRsvpForm);
+nrvaug.views.createMeetingsView = function (scrollIntoView, optMap, optRsvpForm) {
+  return new nrvaug.views.Meetings(scrollIntoView, optMap, optRsvpForm);
 };

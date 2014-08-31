@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday August 12th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in downtown Blacksburg. We will follow a <a class="info-link" href="http://leancoffee.org/" target="blank">Lean Coffee</a> format. Everyone will brainstorm topics as they arrive, give a brief description of their topic, and then vote on what to discuss.</p>' +
+        '<p>Our next meeting will be on Tuesday September 9th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.rackspace.com/" target="blank">Rackspace</a> in the Corporate Research Center in Blacksburg. Adam Pickeral will be discussing how the Cloud Control Panel team at Rackspace scales agile with a team of over 30 developers. He will touch on topics such as development practices, continuous integration and continuous delivery, and project planning. Rackspace will also be providing food and drinks.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
