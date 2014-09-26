@@ -42,17 +42,17 @@ describe('nrvaug.views.Map', function () {
 
   it('renders the map with an address if the address is found', function () {
     expect(googleGeocoder.geocode).toHaveBeenCalledWith(
-      {'address': '432 North Main St # 200, Blacksburg, VA 24060'},
+      {'address': '117 Washington St SW, Blacksburg, VA 24060'},
       new jasmine.Matchers.Any(Function)
     );
     expect(googleMap.setCenter).toHaveBeenCalledWith('the location');
     expect(nrvaug.views.Map.createGoogleMapMarker)
-      .toHaveBeenCalledWith({map: googleMap, position: 'the location', title: 'TechPad'});
+      .toHaveBeenCalledWith({map: googleMap, position: 'the location', title: 'Modea'});
   });
 
   it('adds an info window to the map marker if the address is found', function () {
     expect(nrvaug.views.Map.createGoogleInfoWindow)
-      .toHaveBeenCalledWith("<p>TechPad</p><p>Above PK's Restaurant:</p><p>432 North Main Street, Suite 200</p><p>Blacksburg, Virginia 24060</p>");
+      .toHaveBeenCalledWith("<p>TechPad</p><p>Modea</p><p>117 Washington St SW</p><p>Blacksburg, Virginia 24060</p>");
     expect(googleInfoWindow.open).toHaveBeenCalledWith(googleMap, googleMapMarker);
   });
 });
