@@ -134,6 +134,19 @@ var resources =
 var blog = 
   '<div class="blurbs">' +
     '<div class="blurb">' +
+      '<div id="september-2014-content" class="sidebar-box">' +
+        '<blog>' +
+          '<h2>September 2014 Meeting</h2>' +
+          '<author>Adam Pickeral</author>' +
+          '<date>9/9/14</date>' +
+          '<section>' +
+            '<p class="first">This was our first in a series of talks where different companies in the area provide more insight into a unique area of their development process. Adam Pickeral from Rackspace detailed how his team scales agile, growing from a team of 6 developers to over 30.</p>' +
+            '<iframe src="https://docs.google.com/presentation/d/1Bjht72mMmocaW8BqZPV7uWvYvWpHH2BmjdtpYilJEzE/embed?start=false&loop=false&delayms=60000" frameborder="0" width="775" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+          '</section>' +
+        '</blog>' +
+      '</div>' +
+    '</div>' +
+    '<div class="blurb">' +
       '<div id="november-content" class="sidebar-box">' +
         '<blog>' +
           '<h2>November Meeting</h2>' +
