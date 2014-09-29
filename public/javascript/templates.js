@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday October 14th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.modea.com/" target="blank">Modea</a> in Downtown Blacksburg. Rich Lacher will be discussing "Achieving high performance Agility in large shops through the application of the Three Pillars of Scrum with Lean Metrics and Kanban." This talk is about a large Agile Scrum shop that lost their velocity and went through a series of Agile Health checks and adjustments to regain and then far surpass their earlier levels of productivity. Modea will also be providing food and drinks.</p>' +
+        '<p>Our next meeting will be on Tuesday October 14th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.modea.com/" target="blank">Modea</a> in Downtown Blacksburg. Rick Lacher will be discussing "Achieving high performance Agility in large shops through the application of the Three Pillars of Scrum with Lean Metrics and Kanban." This talk is about a large Agile Scrum shop that lost their velocity and went through a series of Agile Health checks and adjustments to regain and then far surpass their earlier levels of productivity. Modea will also be providing food and drinks.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
