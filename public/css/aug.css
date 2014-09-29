@@ -292,6 +292,9 @@ footer {
   position: relative;
   overflow: hidden; }
 
+#september-2014-content.sidebar-box {
+  max-height: 775px; }
+
 .sidebar-box .read-more {
   position: absolute;
   bottom: 0;

@@ -6,6 +6,7 @@ nrvaug.views.Blog.prototype = new nrvaug.views.View();
 nrvaug.views.Blog.prototype.render = function () {
   nrvaug.views.View.prototype.render.call(this, arguments);
 
+  this.readMore_('#september-2014-read-more', '#september-content');
   this.readMore_('#november-read-more', '#november-content');
   this.readMore_('#september-read-more', '#september-content');
   this.readMore_('#august-read-more', '#august-content');

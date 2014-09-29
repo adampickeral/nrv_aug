@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday September 9th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.rackspace.com/" target="blank">Rackspace</a> in the Corporate Research Center in Blacksburg. Adam Pickeral will be discussing how the Cloud Control Panel team at Rackspace scales agile with a team of over 30 developers. He will touch on topics such as development practices, continuous integration and continuous delivery, and project planning. Rackspace will also be providing food and drinks.</p>' +
+        '<p>Our next meeting will be on Tuesday October 14th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.modea.com/" target="blank">Modea</a> in Downtown Blacksburg. Rick Lacher will be discussing "Achieving high performance Agility in large shops through the application of the Three Pillars of Scrum with Lean Metrics and Kanban." This talk is about a large Agile Scrum shop that lost their velocity and went through a series of Agile Health checks and adjustments to regain and then far surpass their earlier levels of productivity. Modea will also be providing food and drinks.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
@@ -133,6 +133,19 @@ var resources =
 
 var blog = 
   '<div class="blurbs">' +
+    '<div class="blurb">' +
+      '<div id="september-2014-content" class="sidebar-box">' +
+        '<blog>' +
+          '<h2>September 2014 Meeting</h2>' +
+          '<author>Adam Pickeral</author>' +
+          '<date>9/9/14</date>' +
+          '<section>' +
+            '<p class="first">This was our first in a series of talks where different companies in the area provide more insight into a unique area of their development process. Adam Pickeral from Rackspace detailed how his team scales agile, growing from a team of 6 developers to over 30.</p>' +
+            '<iframe src="https://docs.google.com/presentation/d/1Bjht72mMmocaW8BqZPV7uWvYvWpHH2BmjdtpYilJEzE/embed?start=false&loop=false&delayms=60000" frameborder="0" width="775" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>' +
+          '</section>' +
+        '</blog>' +
+      '</div>' +
+    '</div>' +
     '<div class="blurb">' +
       '<div id="november-content" class="sidebar-box">' +
         '<blog>' +
