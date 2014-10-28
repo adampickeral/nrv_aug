@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday October 14th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.modea.com/" target="blank">Modea</a> in Downtown Blacksburg. Rick Lacher will be discussing "Achieving high performance Agility in large shops through the application of the Three Pillars of Scrum with Lean Metrics and Kanban." This talk is about a large Agile Scrum shop that lost their velocity and went through a series of Agile Health checks and adjustments to regain and then far surpass their earlier levels of productivity. Modea will also be providing food and drinks.</p>' +
+        '<p>Our next meeting will be on Tuesday November 11th, from 6:00pm - 8:00pm at <a class="info-link" href="http://interactiveachievement.com/" target="blank">Interactive Achievement</a> in Downtown Roanoke. The team at Interactive Achievement will be discussing "Agile Games that Help the Business Embrace the Process." At IA, they play several games designed around common pitfalls that happen in communication between business and technology. They will present on why as a continuous agile shop, they chose the scrum framework, the challenges they\'ve overcome so far, where they\'re headed, and how they plan to get there. Interactive Achievement will also be providing food and drinks.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
