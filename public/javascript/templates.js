@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday November 11th, from 6:00pm - 8:00pm at <a class="info-link" href="http://interactiveachievement.com/" target="blank">Interactive Achievement</a> in Downtown Roanoke. The team at Interactive Achievement will be discussing "Agile Games that Help the Business Embrace the Process." At IA, they play several games designed around common pitfalls that happen in communication between business and technology. They will present on why as a continuous agile shop, they chose the scrum framework, the challenges they\'ve overcome so far, where they\'re headed, and how they plan to get there. Interactive Achievement will also be providing food and drinks.</p>' +
+        '<p>We will not be meeting for the month of December.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
