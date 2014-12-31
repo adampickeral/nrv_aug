@@ -295,8 +295,46 @@ var blog =
     '</div>' +
   '</div>';
 
+var contact = 
+  '<div class="blurbs">' +
+    '<div class="blurb">' +
+      '<h2>Contact Us</h2>' +
+      '<div class="form">' +
+        '<h4>All fields are required</h4>' +
+        '<div class="form-field">' +
+          '<label for="contact-name">Name</label>' +
+          '<input id="contact-name" type="text">' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label for="contact-email">Email</label>' +
+          '<input id="contact-email" type="email">' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label for="contact-subject">Subject</label>' +
+          '<input id="contact-subject" type="text">' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label for="contact-message">Message</label>' +
+          '<textarea id="contact-message"></textarea>' +
+        '</div>' +
+        '<div class="form-field">' +
+          '<label for="contact-security-challenge-question">What is this a picture of?</label>' +
+          '<div id="security-challenge-image"><img src="/images/secure_image_{{ challenge }}.png"></div>' +
+          '<input id="contact-security-challenge-question" name="contact-security-challenge-question" type="text">' +
+        '</div>' +
+        '<div class="form-field info-message">' +
+          '<div id="contact-response-message"></div>' +
+        '</div>' +
+        '<div class="form-field save-link">' +
+          '<a class="button" id="contact-submit">Submit</a>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>';
+
 nrvaug.templates.mainTmpl = Mustache.compile(main);
 nrvaug.templates.meetingsTmpl = Mustache.compile(meetings);
 nrvaug.templates.mailingListTmpl = Mustache.compile(mailingList);
 nrvaug.templates.resourcesTmpl = Mustache.compile(resources);
 nrvaug.templates.blogTmpl = Mustache.compile(blog);
+nrvaug.templates.contactTmpl = Mustache.compile(contact);
