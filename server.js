@@ -132,6 +132,48 @@ server.post('/rsvp', function (req, res) {
   });
 });
 
+// contact us; sends email to organizers list
+server.post('/contact', function (req, res) {
+  var name, email, data;
+
+  data = '';
+  req.on('data', function (chunk) {
+    data += chunk;
+  });
+
+  req.on('end', function () {
+    var options;
+    
+    requestBody = qs.parse(data);
+
+    if (challengeAccepted(req.session.cq, requestBody.picture)) {
+      options = {
+        url: config.sendMessage,
+        auth: {
+          user: config.user,
+          pass: config.key
+        },
+        form: {
+          from: 'contact@agilenrv.org',
+          to: 'group-organizers@agilenrv.org',
+          subject: requestBody.subject,
+          text: 'From: ' + requestBody.name + '\nEmail: ' + requestBody.email + '\nMessage: ' + requestBody.message
+        }
+      };
+
+      request.post(options, function (error, response, body) {
+        if (error) {
+          res.status(400).send('There was an error processing the request. Please try again.');
+          return;
+        }
+        res.status(response.statusCode).send(body);
+      });
+    } else {
+      res.status(403).send('Bad challenge answer');
+    }
+  });
+});
+
 function challengeAccepted(cq, answer) {
   var lowerCaseAnswer;
 

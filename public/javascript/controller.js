@@ -13,6 +13,8 @@ nrvaug.Controller.prototype.route = function () {
   hash = this.getLocationHash_();
   if (hash === "main") {
     view = nrvaug.views.createMainView(true);
+  } else if (hash === "contact") {
+    view = nrvaug.views.createContactView(true);
   } else if (hash === "meetings") {
     view = nrvaug.views.createMeetingsView(true);
   } else if (hash === "mailingList") {
