@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>We will not be meeting for the month of December.</p>' +
+        '<p>Our next meeting will be on Tuesday January 13th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in Downtown Blacksburg. This will follow the Lean Coffee format, where we\'ll brainstorm topics as we arrive, and then discuss the top vote getters. This will be a bring your own food meeting.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
