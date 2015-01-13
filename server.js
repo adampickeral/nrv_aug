@@ -118,7 +118,7 @@ server.post('/rsvp', function (req, res) {
           res.status(response.statusCode).send(body);
         } else {
           options.form.from = 'rsvp@agilenrv.org';
-          options.form.to = 'organizers@agilenrv.org';
+          options.form.to = 'group-organizers@agilenrv.org';
           options.form.subject += ' - ' + requestBody.name;
           options.form.text = 'RSVP for ' + requestBody.name + ' ' + requestBody.email + ': ' + requestBody.reply;
           request.post(options, function (err, resp, bod) {
