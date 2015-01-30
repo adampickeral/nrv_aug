@@ -16,7 +16,7 @@ var meetings =
       '<h2>Meetings</h2>' +
       '<section>' +
         '<p class="first">We hold monthly meetings, generally the second Tuesday of every month from 6:00pm - 8:00pm.</p>' +
-        '<p>Our next meeting will be on Tuesday February 10th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in Downtown Blacksburg. Our friends at <a class="info-link" href="http://www.qualtrax.com/">Qualtrax</a> will be sponsoring this meeting and providing the topic for discussion. They\'ll  be talking about how they do continuous improvement and continuous learning beyond just the retrospective. We\'ll here about the different practices they use such as: learning lounges, postmortem defect reviews, developer days, and book clubs. Food will also be provided by Qualtrax.</p>' +
+        '<p>Our next meeting will be on Tuesday February 10th, from 6:00pm - 8:00pm at <a class="info-link" href="http://www.techpad.org/" target="blank">TechPad</a> in Downtown Blacksburg. Our friends at <a class="info-link" href="http://www.qualtrax.com/" target="blank">Qualtrax</a> will be sponsoring this meeting and providing the topic for discussion. They\'ll  be talking about how they do continuous improvement and continuous learning beyond just the retrospective. We\'ll here about the different practices they use such as: learning lounges, postmortem defect reviews, developer days, and book clubs. Food will also be provided by Qualtrax.</p>' +
       '</section>' +
       '<div class="form">' +
         '<h3>Don\'t forget to RSVP!</h3>' +
