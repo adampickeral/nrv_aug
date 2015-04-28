@@ -105,7 +105,7 @@ server.post('/rsvp', function (req, res) {
           from: 'donotreply@agilenrv.org',
           to: requestBody.email,
           subject: 'AUG Meeting RSVP',
-          text: 'Thanks for RSVP\'ing to the meeting on Tuesday February 10th, 2015, at 6:00pm. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
+          text: 'Thanks for RSVP\'ing to the meeting on Tuesday May 12th, 2015, at 6:00pm. Your reply: ' + requestBody.reply + '. To change your reply, simply resubmit the form on the site.'
         }
       };
 
